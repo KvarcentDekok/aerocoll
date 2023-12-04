@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Aerocoll</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-2">
+                <a class="navbar-brand" href="index.html" aria-label="На главную">
+                    <img src="img/logo.webp" alt="Логотип Aerocoll" width="200" height="60">
+                </a>
+            </div>
+            <div class="col-auto me-auto">
+                <div class="row text-end lh-1">
+                    <div class="col-12">
+                        <a href="tel:+74957493907" class="link-secondary fs-4 text-decoration-none"
+                           aria-labelledby="call-back">
+                            <span class="bi bi-telephone-forward fs-5 text-black-50"></span> +7 495 749-39-07
+                        </a>
+                    </div>
+
+                    <div class="col-12">
+                        <small id="call-back" class="text-black-50">обратный звонок</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 d-flex">
+                <button type="button" class="btn btn-outline-secondary ms-auto" data-bs-toggle="modal"
+                        data-bs-target="#leave-request">
+                    Оставить запрос
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Переключить отображение навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">О компании</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">Продукция</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">Сервис и услуги</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">Документы</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="modal fade" id="leave-request" tabindex="-1" aria-labelledby="leave-request-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="leave-request-label">Оставьте запрос</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="lead">
+                    Заполните форму обратной связи и мы пришлем вам коммерческое предложение.
+                </p>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="col-form-label">Ваше имя *</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">Ваш email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="col-form-label">Ваш телефон *</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comment" class="col-form-label">Ваши комментарии</label>
+                        <textarea class="form-control" id="comment"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
+                <button type="button" class="btn btn-primary">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/general.js"></script>
+</body>
+</html>
