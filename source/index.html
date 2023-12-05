@@ -41,32 +41,134 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Переключить отображение навигации">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Переключить отображение навигации">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-around">
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">О компании</a>
+                    <li class="nav-item dropdown custom-dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle" href="#"
+                           id="about-dropdown" role="button" aria-expanded="false">
+                            О компании
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark custom-dropdown__menu"
+                            aria-labelledby="about-dropdown">
+                            <li><a class="dropdown-item text-uppercase" href="#">Политика качества</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Новости</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item custom-dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle" href="#"
+                           id="products-dropdown" role="button" aria-expanded="false">
+                            Продукция
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-dark p-4 start-50 translate-middle-x custom-dropdown__menu custom-dropdown__menu--width-max"
+                             aria-labelledby="products-dropdown">
+                            <ul class="row list-unstyled gy-4">
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей Aerocoll
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Продукция</a>
+                        <a class="nav-link text-uppercase pt-3 pb-3" href="#">Сервис и услуги</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Сервис и услуги</a>
+                        <a class="nav-link text-uppercase pt-3 pb-3" href="#">Документы</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Документы</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Контакты</a>
+                        <a class="nav-link text-uppercase pt-3 pb-3" href="#">Контакты</a>
                     </li>
                 </ul>
             </div>
