@@ -14,6 +14,20 @@ function dropdownMouseOutHandler(index) {
     dropdownList[index].hide();
 }
 
+function dropdownFocusOutHandler(evt, index) {
+    let relatedTarget = evt.relatedTarget;
+
+    while (relatedTarget && relatedTarget !== document.body) {
+        if (relatedTarget.classList.contains('custom-dropdown__menu')) {
+            return;
+        }
+
+        relatedTarget = relatedTarget.parentNode;
+    }
+
+    dropdownList[index].hide();
+}
+
 function customDropdown() {
     for (let i = 0; i < customDropdowns.length; i++) {
         const toggleElement = customDropdowns[i].querySelector('.custom-dropdown__toggle');
@@ -23,8 +37,16 @@ function customDropdown() {
             dropdownMouseOverHandler(i);
         });
 
+        toggleElement.addEventListener('focusin', () => {
+            dropdownMouseOverHandler(i);
+        });
+
         toggleElement.addEventListener('mouseout', () => {
             dropdownMouseOutHandler(i);
+        });
+
+        toggleElement.addEventListener('focusout', (evt) => {
+            dropdownFocusOutHandler(evt, i);
         });
 
         menuElement.addEventListener('mouseover', () => {
@@ -33,6 +55,10 @@ function customDropdown() {
 
         menuElement.addEventListener('mouseout', () => {
             dropdownMouseOutHandler(i);
+        });
+
+        menuElement.addEventListener('focusout', (evt) => {
+            dropdownFocusOutHandler(evt, i);
         });
     }
 }

@@ -1,0 +1,263 @@
+<header>
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-2">
+                <a class="navbar-brand" href="index.html" aria-label="На главную">
+                    <img src="img/logo.webp" alt="Логотип Aerocoll" width="200" height="60">
+                </a>
+            </div>
+            <div class="col-auto me-auto">
+                <div class="row text-end lh-1">
+                    <div class="col-12">
+                        <a href="tel:+74957493907" class="link-secondary fs-4 text-decoration-none"
+                           aria-labelledby="call-back">
+                            <span class="bi bi-telephone-forward fs-5 text-black-50"></span> +7 495 749-39-07
+                        </a>
+                    </div>
+
+                    <div class="col-12">
+                        <small id="call-back" class="text-black-50">обратный звонок</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 d-flex">
+                <button type="button" class="btn btn-outline-secondary ms-auto" data-bs-toggle="modal"
+                        data-bs-target="#leave-request">
+                    Оставить запрос
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Переключить отображение навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-around">
+                    <li class="nav-item dropdown custom-dropdown">
+                        @@if (active === 'about') {
+                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle active"
+                           href="about.html" id="about-dropdown" aria-expanded="false" aria-current="page">
+                            О компании
+                        </a>
+                        }
+
+                        @@if (active !== 'about') {
+                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle"
+                           href="about.html" id="about-dropdown" aria-expanded="false">
+                            О компании
+                        </a>
+                        }
+
+                        <ul class="dropdown-menu dropdown-menu-dark custom-dropdown__menu"
+                            aria-labelledby="about-dropdown">
+                            <li><a class="dropdown-item text-uppercase" href="#">Политика качества</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Новости</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item custom-dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle" href="#"
+                           id="products-dropdown" aria-expanded="false">
+                            Продукция
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-dark p-4 start-50 translate-middle-x custom-dropdown__menu custom-dropdown__menu--width-max"
+                             aria-labelledby="products-dropdown">
+                            <ul class="row list-unstyled gy-4">
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей Aerocoll
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Клей
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item custom-dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle" href="#"
+                           id="service-dropdown" aria-expanded="false">
+                            Сервис и услуги
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-dark p-4 start-50 translate-middle-x custom-dropdown__menu custom-dropdown__menu--width-max"
+                             aria-labelledby="service-dropdown">
+                            <ul class="row list-unstyled gy-4">
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Сервис
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Услуга
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Услуга
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Сервис
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Услуга
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="col-2">
+                                    <div class="card">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                                        <div class="card-body">
+                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
+                                                Услуга
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown custom-dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle" href="#"
+                           id="documents-dropdown" aria-expanded="false">
+                            Документы
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark custom-dropdown__menu"
+                            aria-labelledby="documents-dropdown">
+                            <li><a class="dropdown-item text-uppercase" href="#">Сертификаты</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Каталоги</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase pt-3 pb-3" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
