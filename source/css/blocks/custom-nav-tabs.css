@@ -1,0 +1,7 @@
+.custom-nav-tabs .active .custom-nav-tabs__icon {
+    color: var(--primary-bright-color);
+}
+
+.custom-nav-tabs__icon {
+    font-size: 50px;
+}

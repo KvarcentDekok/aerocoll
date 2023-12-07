@@ -1,12 +1,19 @@
-<header>
+<header class="sticky-top bg-white">
     <div class="container">
         <div class="row d-flex align-items-center">
+            <div class="col-1 d-lg-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                        aria-controls="navbar" aria-expanded="false" aria-label="Переключить отображение навигации">
+                    <span class="bi bi-list fs-2"></span>
+                </button>
+            </div>
+
             <div class="col-2">
                 <a class="navbar-brand" href="index.html" aria-label="На главную">
                     <img src="img/logo.webp" alt="Логотип Aerocoll" width="200" height="60">
                 </a>
             </div>
-            <div class="col-auto me-auto">
+            <div class="col-auto me-auto d-none d-lg-flex">
                 <div class="row text-end lh-1">
                     <div class="col-12">
                         <a href="tel:+74957493907" class="link-secondary fs-4 text-decoration-none"
@@ -20,8 +27,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 d-flex">
-                <button type="button" class="btn btn-outline-secondary ms-auto" data-bs-toggle="modal"
+            <div class="col-3 col-xl-2 d-none d-lg-flex">
+                <button type="button" class="btn btn-outline-primary ms-auto" data-bs-toggle="modal"
                         data-bs-target="#leave-request">
                     Оставить запрос
                 </button>
@@ -29,140 +36,108 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-                    aria-controls="navbar" aria-expanded="false" aria-label="Переключить отображение навигации">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-around">
-                    <li class="nav-item dropdown custom-dropdown">
+                    <li class="btn-group nav-item custom-dropdown">
                         @@if (active === 'about') {
-                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle active"
-                           href="about.html" id="about-dropdown" aria-expanded="false" aria-current="page">
+                        <a href="about.html" id="about-dropdown"
+                           class="nav-link text-uppercase py-3 active custom-dropdown__link" aria-current="page">
                             О компании
                         </a>
                         }
 
                         @@if (active !== 'about') {
-                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle"
-                           href="about.html" id="about-dropdown" aria-expanded="false">
+                        <a href="about.html" id="about-dropdown"
+                           class="nav-link text-uppercase py-3 custom-dropdown__link">
                             О компании
                         </a>
                         }
 
-                        <ul class="dropdown-menu dropdown-menu-dark custom-dropdown__menu"
+                        <a href="about.html" class="nav-link dropdown-toggle py-3 custom-dropdown__toggle dropdown-toggle-split"
+                           aria-expanded="false">
+                            <span class="visually-hidden">Переключатель выпадающего списка</span>
+                        </a>
+
+                        <ul class="dropdown-menu custom-dropdown__menu"
                             aria-labelledby="about-dropdown">
                             <li><a class="dropdown-item text-uppercase" href="#">Политика качества</a></li>
                             <li><a class="dropdown-item text-uppercase" href="#">Новости</a></li>
                         </ul>
                     </li>
 
-                    <li class="nav-item custom-dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle" href="#"
-                           id="products-dropdown" aria-expanded="false">
+                    <li class="btn-group nav-item custom-dropdown custom-dropdown--no-position">
+                        @@if (active === 'production') {
+                        <a href="#" id="products-dropdown"
+                           class="nav-link text-uppercase py-3 custom-dropdown__link active" aria-current="page">
                             Продукция
                         </a>
+                        }
 
-                        <div class="dropdown-menu dropdown-menu-dark p-4 start-50 translate-middle-x custom-dropdown__menu custom-dropdown__menu--width-max"
+                        @@if (active !== 'production') {
+                        <a href="#" id="products-dropdown" class="nav-link text-uppercase py-3 custom-dropdown__link">
+                            Продукция
+                        </a>
+                        }
+
+                        <a href="#" class="nav-link dropdown-toggle py-3 custom-dropdown__toggle dropdown-toggle-split"
+                           aria-expanded="false">
+                            <span class="visually-hidden">Переключатель выпадающего списка</span>
+                        </a>
+
+                        <div class="dropdown-menu p-4 start-50 translate-middle-x custom-dropdown__menu custom-dropdown__menu--width-max"
                              aria-labelledby="products-dropdown">
-                            <ul class="row list-unstyled gy-4">
-                                <li class="col-2">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="production-category.html"
+                                       class="dropdown-header dropdown-item fs-5 fw-semibold text-uppercase">
+                                        Промышленные клеи
+                                    </a>
 
-                                        <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Клей Aerocoll
+                                    <ul class="list-unstyled p-0">
+                                        <li>
+                                            <a href="#" class="dropdown-item text-uppercase">
+                                                Водно-дисперсионные клеи Aerocoll
                                             </a>
-                                        </div>
-                                    </div>
-                                </li>
+                                        </li>
 
-                                <li class="col-2">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+                                        <li>
+                                            <a href="#" class="dropdown-item text-uppercase">Клей-расплав Rumelt</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                                        <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Клей
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
+                                <div class="col-6">
+                                    <a href="#" class="dropdown-header dropdown-item fs-5 fw-semibold text-uppercase">
+                                        Строительно-Монтажные клеи
+                                    </a>
 
-                                <li class="col-2">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+                                    <ul class="list-unstyled p-0">
+                                        <li>
+                                            <a href="#" class="dropdown-item text-uppercase">Обойный клей</a>
+                                        </li>
 
-                                        <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Клей
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="col-2">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
-
-                                        <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Клей
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="col-2">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
-
-                                        <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Клей
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="col-2">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
-
-                                        <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Клей
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="col-2">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
-
-                                        <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Клей
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                        <li>
+                                            <a href="#" class="dropdown-item text-uppercase">Монтажный клей</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </li>
 
-                    <li class="nav-item custom-dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle" href="#"
-                           id="service-dropdown" aria-expanded="false">
+                    <li class="btn-group nav-item custom-dropdown custom-dropdown--no-position">
+                        <a href="#" id="service-dropdown" class="nav-link text-uppercase py-3 custom-dropdown__link">
                             Сервис и услуги
                         </a>
 
-                        <div class="dropdown-menu dropdown-menu-dark p-4 start-50 translate-middle-x custom-dropdown__menu custom-dropdown__menu--width-max"
+                        <a href="#" class="nav-link dropdown-toggle py-3 custom-dropdown__toggle dropdown-toggle-split"
+                           aria-expanded="false">
+                            <span class="visually-hidden">Переключатель выпадающего списка</span>
+                        </a>
+
+                        <div class="dropdown-menu p-4 start-50 translate-middle-x custom-dropdown__menu custom-dropdown__menu--width-max"
                              aria-labelledby="service-dropdown">
                             <ul class="row list-unstyled gy-4">
                                 <li class="col-2">
@@ -240,13 +215,17 @@
                         </div>
                     </li>
 
-                    <li class="nav-item dropdown custom-dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase pt-3 pb-3 custom-dropdown__toggle" href="#"
-                           id="documents-dropdown" aria-expanded="false">
+                    <li class="btn-group nav-item custom-dropdown">
+                        <a href="#" id="documents-dropdown" class="nav-link text-uppercase py-3 custom-dropdown__link">
                             Документы
                         </a>
 
-                        <ul class="dropdown-menu dropdown-menu-dark custom-dropdown__menu"
+                        <a href="#" class="nav-link dropdown-toggle py-3 custom-dropdown__toggle dropdown-toggle-split"
+                           aria-expanded="false">
+                            <span class="visually-hidden">Переключатель выпадающего списка</span>
+                        </a>
+
+                        <ul class="dropdown-menu custom-dropdown__menu"
                             aria-labelledby="documents-dropdown">
                             <li><a class="dropdown-item text-uppercase" href="#">Сертификаты</a></li>
                             <li><a class="dropdown-item text-uppercase" href="#">Каталоги</a></li>
@@ -254,7 +233,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase pt-3 pb-3" href="#">Контакты</a>
+                        <a class="nav-link text-uppercase pt-3 pb-3 custom-nav-link" href="#">Контакты</a>
                     </li>
                 </ul>
             </div>

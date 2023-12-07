@@ -1,0 +1,13 @@
+.home {
+    --margin-bottom: 50px;
+
+    width: 100%;
+    height: 450px;
+    margin-bottom: calc(var(--margin-bottom) * 2);
+
+    background: url("../../img/image-placeholder.svg") no-repeat center / cover;
+}
+
+.home__title-block {
+    margin-bottom: calc(var(--margin-bottom) * -1);
+}

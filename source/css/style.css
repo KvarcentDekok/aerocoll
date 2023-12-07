@@ -1,3 +1,9 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 
+@import "variables.css";
+
 @import "blocks/custom-dropdown.css";
+@import "blocks/custom-nav-link.css";
+@import "blocks/home.css";
+@import "blocks/text-primary-bright.css";
+@import "blocks/custom-nav-tabs.css";
