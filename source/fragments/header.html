@@ -240,3 +240,45 @@
         </div>
     </nav>
 </header>
+
+<div class="modal fade" id="leave-request" tabindex="-1" aria-labelledby="leave-request-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="leave-request-label">Оставьте запрос</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="lead">
+                    Заполните форму обратной связи и мы пришлем вам коммерческое предложение.
+                </p>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="col-form-label">Ваше имя *</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">Ваш email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="col-form-label">Ваш телефон *</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comment" class="col-form-label">Ваши комментарии</label>
+                        <textarea class="form-control" id="comment"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
+                <button type="button" class="btn btn-primary">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>

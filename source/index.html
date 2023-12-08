@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +9,7 @@
 
     <title>Aerocoll</title>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 @@include('fragments/header.html', {active: ''})
 
 <main>
@@ -73,220 +73,268 @@
     </section>
 
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <article class="card bg-dark text-white">
-                    <img src="img/image-placeholder.svg" class="card-img" alt="..." height="450">
+        <div class="row gy-3">
+            <div class="col-12 col-lg-6">
+                <a href="production-category.html" class="card bg-dark custom-overlay-card">
+                    <img src="img/image-placeholder.svg" class="card-img" alt="..." height="300">
 
-                    <div class="card-img-overlay d-flex flex-column">
-                        <h2 class="card-title mt-5 fs-1">Промышленные клеи</h2>
+                    <div class="card-img-overlay d-flex flex-column custom-overlay-card__overlay">
+                        <h2 class="card-title mt-5 custom-overlay-card__title">Промышленные клеи</h2>
                         <p class="card-text fs-4">Контент, описывающий промышленные клеи</p>
-                        <a href="production-category.html"
-                           class="btn btn-primary btn-lg stretched-link mt-auto col-12 col-md-10">
-                            Перейти к промышленным клеям
-                        </a>
                     </div>
-                </article>
+                </a>
             </div>
 
-            <div class="col-12 col-md-6">
-                <article class="card bg-dark text-white">
-                    <img src="img/image-placeholder.svg" class="card-img" alt="..." height="450">
+            <div class="col-12 col-lg-6">
+                <a href="#" class="card bg-dark custom-overlay-card">
+                    <img src="img/image-placeholder.svg" class="card-img" alt="..." height="300">
 
-                    <div class="card-img-overlay d-flex flex-column">
-                        <h2 class="card-title mt-5 fs-1">Строительно-отделочные клеи</h2>
+                    <div class="card-img-overlay d-flex flex-column custom-overlay-card__overlay">
+                        <h2 class="card-title mt-5 custom-overlay-card__title">Строительно-отделочные клеи</h2>
                         <p class="card-text fs-4">Контент, описывающий строительно-отделочные клеи</p>
-                        <a href="#" class="btn btn-primary btn-lg stretched-link mt-auto col-12 col-md-10">
-                            Перейти к строительно-отделочным клеям
-                        </a>
                     </div>
-                </article>
+                </a>
             </div>
         </div>
     </div>
 
     <section class="my-5">
         <div class="container">
-            <h2 class="text-center mb-4">О компании <span class="text-primary-bright">Aerocoll</span></h2>
+            <h2 class="text-center mb-4">О компании <span class="text-primary text-uppercase">Aerocoll</span></h2>
 
-            <ul class="nav nav-tabs nav-justified custom-nav-tabs" id="tabs-about" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-muted active d-flex flex-column align-items-center g-2 fs-5 fw-semibold"
-                            id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab"
-                            aria-controls="first" aria-selected="true">
-                        <span class="bi bi-award custom-nav-tabs__icon"></span>
+            <div class="d-flex d-lg-block align-items-stretch custom-nav-tabs">
+                <ul class="nav nav-tabs nav-justified flex-column flex-lg-row custom-nav-tabs__list" id="tabs-about"
+                    role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active d-flex flex-column align-items-center g-2 fs-5 fw-semibold custom-nav-tabs__tab"
+                                id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab"
+                                aria-controls="first" aria-selected="true">
+                            <span class="bi bi-award custom-nav-tabs__icon d-none d-lg-block"></span>
 
-                        Первый таб
-                    </button>
-                </li>
+                            Первый таб
+                        </button>
+                    </li>
 
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-muted d-flex flex-column align-items-center g-2 fs-5 fw-semibold"
-                            id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab"
-                            aria-controls="second" aria-selected="false">
-                        <span class="bi bi-house-heart custom-nav-tabs__icon"></span>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link d-flex flex-column align-items-center g-2 fs-5 fw-semibold custom-nav-tabs__tab"
+                                id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab"
+                                aria-controls="second" aria-selected="false">
+                            <span class="bi bi-house-heart custom-nav-tabs__icon d-none d-lg-block"></span>
 
-                        Второй таб
-                    </button>
-                </li>
+                            Второй таб
+                        </button>
+                    </li>
 
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-muted d-flex flex-column align-items-center g-2 fs-5 fw-semibold"
-                            id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab"
-                            aria-controls="third" aria-selected="false">
-                        <span class="bi bi-people custom-nav-tabs__icon"></span>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link d-flex flex-column align-items-center g-2 fs-5 fw-semibold custom-nav-tabs__tab"
+                                id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab"
+                                aria-controls="third" aria-selected="false">
+                            <span class="bi bi-people custom-nav-tabs__icon d-none d-lg-block"></span>
 
-                        Третий таб
-                    </button>
-                </li>
+                            Третий таб
+                        </button>
+                    </li>
 
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-muted d-flex flex-column align-items-center g-2 fs-5 fw-semibold"
-                            id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourth" type="button" role="tab"
-                            aria-controls="fourth" aria-selected="false">
-                        <span class="bi bi-truck custom-nav-tabs__icon"></span>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link d-flex flex-column align-items-center g-2 fs-5 fw-semibold custom-nav-tabs__tab"
+                                id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourth" type="button" role="tab"
+                                aria-controls="fourth" aria-selected="false">
+                            <span class="bi bi-truck custom-nav-tabs__icon d-none d-lg-block"></span>
 
-                        Четвёртый таб
-                    </button>
-                </li>
+                            Четвёртый таб
+                        </button>
+                    </li>
 
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-muted d-flex flex-column align-items-center g-2 fs-5 fw-semibold"
-                            id="fifth-tab" data-bs-toggle="tab" data-bs-target="#fifth" type="button" role="tab"
-                            aria-controls="fifth" aria-selected="false">
-                        <span class="bi bi-tags custom-nav-tabs__icon"></span>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link d-flex flex-column align-items-center g-2 fs-5 fw-semibold custom-nav-tabs__tab"
+                                id="fifth-tab" data-bs-toggle="tab" data-bs-target="#fifth" type="button" role="tab"
+                                aria-controls="fifth" aria-selected="false">
+                            <span class="bi bi-tags custom-nav-tabs__icon d-none d-lg-block"></span>
 
-                        Пятый таб
-                    </button>
-                </li>
-            </ul>
+                            Пятый таб
+                        </button>
+                    </li>
+                </ul>
 
-            <div class="tab-content border-start border-end border-bottom" id="tab-about-content">
-                <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item py-3">
-                            Первый пункт, относящийся к первому табу, описывающий компанию Aerocoll
-                        </li>
+                <div class="tab-content custom-nav-tabs__content" id="tab-about-content">
+                    <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Первый пункт, относящийся к первому табу, описывающий компанию Aerocoll
+                            </li>
 
-                        <li class="list-group-item py-3">
-                            Второй пункт, относящийся к первому табу, описывающий компанию Aerocoll
-                        </li>
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Второй пункт, относящийся к первому табу, описывающий компанию Aerocoll
+                            </li>
 
-                        <li class="list-group-item py-3">
-                            Третий пункт, относящийся к первому табу, описывающий компанию Aerocoll
-                        </li>
-                    </ul>
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Третий пункт, относящийся к первому табу, описывающий компанию Aerocoll
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Первый пункт, относящийся ко второму табу, описывающий компанию Aerocoll
+                            </li>
+
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Второй пункт, относящийся ко второму табу, описывающий компанию Aerocoll
+                            </li>
+
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Третий пункт, относящийся ко второму табу, описывающий компанию Aerocoll
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Первый пункт, относящийся к третьему табу, описывающий компанию Aerocoll
+                            </li>
+
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Второй пункт, относящийся к третьему табу, описывающий компанию Aerocoll
+                            </li>
+
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Третий пункт, относящийся к третьему табу, описывающий компанию Aerocoll
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Первый пункт, относящийся к четвёртому табу, описывающий компанию Aerocoll
+                            </li>
+
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Второй пункт, относящийся к четвёртому табу, описывающий компанию Aerocoll
+                            </li>
+
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Третий пункт, относящийся к четвёртому табу, описывающий компанию Aerocoll
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade" id="fifth" role="tabpanel" aria-labelledby="fifth-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Первый пункт, относящийся к пятому табу, описывающий компанию Aerocoll
+                            </li>
+
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Второй пункт, относящийся к пятому табу, описывающий компанию Aerocoll
+                            </li>
+
+                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
+                                Третий пункт, относящийся к пятому табу, описывающий компанию Aerocoll
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Новости</h2>
+
+            <div class="row gy-4">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <article class="card custom-news-card" aria-labelledby="news-card-title-1">
+                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <a href="#" id="news-card-title-1"
+                               class="card-title stretched-link custom-news-card__title">
+                                Интересная новость
+                            </a>
+
+                            <p class="card-text">Контент, вкратце описывающий интересную новость.</p>
+
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <time datetime="2023-08-12">08/12/23</time>
+                                </small>
+                            </p>
+                        </div>
+                    </article>
                 </div>
 
-                <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item py-3">
-                            Первый пункт, относящийся ко второму табу, описывающий компанию Aerocoll
-                        </li>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <article class="card custom-news-card" aria-labelledby="news-card-title-2">
+                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
 
-                        <li class="list-group-item py-3">
-                            Второй пункт, относящийся ко второму табу, описывающий компанию Aerocoll
-                        </li>
+                        <div class="card-body">
+                            <a href="#" id="news-card-title-2"
+                               class="card-title stretched-link custom-news-card__title">
+                                Интересная новость
+                            </a>
 
-                        <li class="list-group-item py-3">
-                            Третий пункт, относящийся ко второму табу, описывающий компанию Aerocoll
-                        </li>
-                    </ul>
+                            <p class="card-text">Контент, вкратце описывающий интересную новость.</p>
+
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <time datetime="2023-08-12">08/12/23</time>
+                                </small>
+                            </p>
+                        </div>
+                    </article>
                 </div>
 
-                <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item py-3">
-                            Первый пункт, относящийся к третьему табу, описывающий компанию Aerocoll
-                        </li>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <article class="card custom-news-card" aria-labelledby="news-card-title-3">
+                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
 
-                        <li class="list-group-item py-3">
-                            Второй пункт, относящийся к третьему табу, описывающий компанию Aerocoll
-                        </li>
+                        <div class="card-body">
+                            <a href="#" id="news-card-title-3"
+                               class="card-title stretched-link custom-news-card__title">
+                                Интересная новость
+                            </a>
 
-                        <li class="list-group-item py-3">
-                            Третий пункт, относящийся к третьему табу, описывающий компанию Aerocoll
-                        </li>
-                    </ul>
+                            <p class="card-text">Контент, вкратце описывающий интересную новость.</p>
+
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <time datetime="2023-08-12">08/12/23</time>
+                                </small>
+                            </p>
+                        </div>
+                    </article>
                 </div>
 
-                <div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item py-3">
-                            Первый пункт, относящийся к четвёртому табу, описывающий компанию Aerocoll
-                        </li>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <article class="card custom-news-card" aria-labelledby="news-card-title-4">
+                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
 
-                        <li class="list-group-item py-3">
-                            Второй пункт, относящийся к четвёртому табу, описывающий компанию Aerocoll
-                        </li>
+                        <div class="card-body">
+                            <a href="#" id="news-card-title-4"
+                               class="card-title stretched-link custom-news-card__title">
+                                Интересная новость
+                            </a>
 
-                        <li class="list-group-item py-3">
-                            Третий пункт, относящийся к четвёртому табу, описывающий компанию Aerocoll
-                        </li>
-                    </ul>
-                </div>
+                            <p class="card-text">Контент, вкратце описывающий интересную новость.</p>
 
-                <div class="tab-pane fade" id="fifth" role="tabpanel" aria-labelledby="fifth-tab">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item py-3">
-                            Первый пункт, относящийся к пятому табу, описывающий компанию Aerocoll
-                        </li>
-
-                        <li class="list-group-item py-3">
-                            Второй пункт, относящийся к пятому табу, описывающий компанию Aerocoll
-                        </li>
-
-                        <li class="list-group-item py-3">
-                            Третий пункт, относящийся к пятому табу, описывающий компанию Aerocoll
-                        </li>
-                    </ul>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <time datetime="2023-08-12">08/12/23</time>
+                                </small>
+                            </p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
 </main>
 
-<div class="modal fade" id="leave-request" tabindex="-1" aria-labelledby="leave-request-label" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="leave-request-label">Оставьте запрос</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p class="lead">
-                    Заполните форму обратной связи и мы пришлем вам коммерческое предложение.
-                </p>
-
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="col-form-label">Ваше имя *</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="email" class="col-form-label">Ваш email</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="phone" class="col-form-label">Ваш телефон *</label>
-                        <input type="tel" class="form-control" id="phone" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="comment" class="col-form-label">Ваши комментарии</label>
-                        <textarea class="form-control" id="comment"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
-                <button type="button" class="btn btn-primary">Отправить</button>
-            </div>
-        </div>
-    </div>
-</div>
+@@include('fragments/footer.html')
 
 <script src="js/general.js"></script>
 </body>

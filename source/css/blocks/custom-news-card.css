@@ -1,0 +1,11 @@
+.custom-news-card__title {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: all 200ms linear;
+}
+
+.custom-news-card__title:hover {
+    color: var(--primary-bright-color);
+}
