@@ -1,0 +1,146 @@
+.custom-accordion-about__button {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.custom-accordion-about__icon {
+    margin-right: 16px;
+
+    font-size: 24px;
+}
+
+@media (min-width: 992px) {
+    .custom-accordion-about {
+        display: flex;
+    }
+
+    .custom-accordion-about .collapsing {
+        transition: height 1ms linear;
+    }
+
+    .custom-accordion-about__item {
+        border: none;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .custom-accordion-about__header {
+        height: 160px;
+    }
+
+    .custom-accordion-about__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        height: 100%;
+
+        text-align: center;
+
+        border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
+    }
+
+    .custom-accordion-about__button:not(.collapsed) {
+        border-top: 1px solid var(--bs-border-color);
+        border-right: 1px solid var(--bs-border-color);
+        border-bottom: 1px solid transparent;
+        border-left: 1px solid var(--bs-border-color);
+
+        background-color: #FFFFFF;
+        box-shadow: none;
+    }
+
+    .custom-accordion-about__button:not(.collapsed) .custom-accordion-about__icon {
+        color: var(--primary-bright-color);
+    }
+
+    .custom-accordion-about__button.collapsed {
+        border: 1px solid transparent;
+
+        border-bottom-color: var(--bs-secondary-bg);
+    }
+
+    .custom-accordion-about__button.collapsed:hover {
+        border-color: var(--bs-secondary-bg);
+    }
+
+    .custom-accordion-about__button::after {
+        content: none;
+    }
+
+    .custom-accordion-about__icon {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    .custom-accordion-about__collapse {
+        border: 1px solid var(--bs-secondary-bg);
+
+        position: relative;
+
+        border-top-color: transparent;
+    }
+
+    .custom-accordion-about__item:nth-last-child(2):first-child .custom-accordion-about__collapse,
+    .custom-accordion-about__item:nth-last-child(2):first-child ~ .custom-accordion-about__item .custom-accordion-about__collapse {
+        width: 200%;
+    }
+
+    .custom-accordion-about__item:nth-last-child(3):first-child .custom-accordion-about__collapse,
+    .custom-accordion-about__item:nth-last-child(3):first-child ~ .custom-accordion-about__item .custom-accordion-about__collapse {
+        width: 300%;
+    }
+
+    .custom-accordion-about__item:nth-last-child(4):first-child .custom-accordion-about__collapse,
+    .custom-accordion-about__item:nth-last-child(4):first-child ~ .custom-accordion-about__item .custom-accordion-about__collapse {
+        width: 400%;
+    }
+
+    .custom-accordion-about__item:nth-last-child(5):first-child .custom-accordion-about__collapse,
+    .custom-accordion-about__item:nth-last-child(5):first-child ~ .custom-accordion-about__item .custom-accordion-about__collapse {
+        width: 500%;
+    }
+
+    .custom-accordion-about__item:nth-last-child(6):first-child .custom-accordion-about__collapse,
+    .custom-accordion-about__item:nth-last-child(6):first-child ~ .custom-accordion-about__item .custom-accordion-about__collapse {
+        width: 600%;
+    }
+
+    .custom-accordion-about__item:nth-last-child(7):first-child .custom-accordion-about__collapse,
+    .custom-accordion-about__item:nth-last-child(7):first-child ~ .custom-accordion-about__item .custom-accordion-about__collapse {
+        width: 700%;
+    }
+
+    .custom-accordion-about__item:nth-last-child(8):first-child .custom-accordion-about__collapse,
+    .custom-accordion-about__item:nth-last-child(8):first-child ~ .custom-accordion-about__item .custom-accordion-about__collapse {
+        width: 800%;
+    }
+
+    .custom-accordion-about__item:nth-child(2) .custom-accordion-about__collapse {
+        left: -100%
+    }
+
+    .custom-accordion-about__item:nth-child(3) .custom-accordion-about__collapse {
+        left: -200%
+    }
+
+    .custom-accordion-about__item:nth-child(4) .custom-accordion-about__collapse {
+        left: -300%
+    }
+
+    .custom-accordion-about__item:nth-child(5) .custom-accordion-about__collapse {
+        left: -400%
+    }
+
+    .custom-accordion-about__item:nth-child(6) .custom-accordion-about__collapse {
+        left: -500%
+    }
+
+    .custom-accordion-about__item:nth-child(7) .custom-accordion-about__collapse {
+        left: -600%
+    }
+
+    .custom-accordion-about__item:nth-child(8) .custom-accordion-about__collapse {
+        left: -700%
+    }
+}

@@ -15,7 +15,60 @@
 <main>
     <h1 class="visually-hidden">Aerocoll</h1>
 
-    <section id="carousel-home" class="carousel slide" data-bs-ride="carousel">
+    <article class="swiper custom-slider mb-5">
+        <h2 class="visually-hidden">Стартовое слайдшоу</h2>
+
+        <ol class="swiper-wrapper custom-slider__wrapper">
+            <li class="swiper-slide custom-slider__slide">
+                <img src="img/image-placeholder.svg" class="custom-slider__image" alt="...">
+
+                <div class="custom-slider__content text-center">
+                    <h3 class="text-white custom-slider__title">Первый слайд</h3>
+
+                    <p class="mt-4 text-white custom-slider__text d-none d-md-block">
+                        Небольшой контент, отражающий суть первого слайда
+                    </p>
+
+                    <a href="#" class="btn btn-primary btn-lg col-12 col-sm-9 col-md-6 col-lg-3 mx-auto mt-4">Ссылка</a>
+                </div>
+            </li>
+
+            <li class="swiper-slide custom-slider__slide">
+                <img src="img/image-placeholder.svg" class="custom-slider__image" alt="...">
+
+                <div class="custom-slider__content text-center">
+                    <h3 class="text-white custom-slider__title">Второй слайд</h3>
+
+                    <p class="mt-4 text-white custom-slider__text d-none d-md-block">
+                        Небольшой контент, отражающий суть второго слайда
+                    </p>
+
+                    <a href="#" class="btn btn-primary btn-lg col-12 col-sm-9 col-md-6 col-lg-3 mx-auto mt-4">Ссылка</a>
+                </div>
+            </li>
+
+            <li class="swiper-slide custom-slider__slide">
+                <img src="img/image-placeholder.svg" class="custom-slider__image" alt="...">
+
+                <div class="custom-slider__content text-center">
+                    <h3 class="text-white custom-slider__title">Третий слайд</h3>
+
+                    <p class="mt-4 text-white custom-slider__text d-none d-md-block">
+                        Небольшой контент, отражающий суть третьего слайда
+                    </p>
+
+                    <a href="#" class="btn btn-primary btn-lg col-12 col-sm-9 col-md-6 col-lg-3 mx-auto mt-4">Ссылка</a>
+                </div>
+            </li>
+        </ol>
+
+        <div class="swiper-pagination custom-slider__pagination"></div>
+
+        <button type="button" class="swiper-button-prev custom-slider__button"></button>
+        <button type="button" class="swiper-button-next custom-slider__button"></button>
+    </article>
+
+    <!--<section id="carousel-home" class="carousel slide" data-bs-ride="carousel">
         <h2 class="visually-hidden">Стартовое слайдшоу</h2>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-home" data-bs-slide="prev">
@@ -70,7 +123,7 @@
             <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="2" aria-label="К третьему слайду">
             </button>
         </div>
-    </section>
+    </section>-->
 
     <div class="container">
         <div class="row gy-3">
@@ -102,141 +155,103 @@
         <div class="container">
             <h2 class="text-center mb-4">О компании <span class="text-primary text-uppercase">Aerocoll</span></h2>
 
-            <div class="d-flex d-lg-block align-items-stretch custom-nav-tabs">
-                <ul class="nav nav-tabs nav-justified flex-column flex-lg-row custom-nav-tabs__list" id="tabs-about"
-                    role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active d-flex flex-column align-items-center g-2 fs-5 fw-semibold custom-nav-tabs__tab"
-                                id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab"
-                                aria-controls="first" aria-selected="true">
-                            <span class="bi bi-award custom-nav-tabs__icon d-none d-lg-block"></span>
-
-                            Первый таб
+            <div class="accordion custom-accordion-about" id="accordion-about">
+                <section class="accordion-item custom-accordion-about__item">
+                    <h3 class="accordion-header custom-accordion-about__header" id="headingOne">
+                        <button class="accordion-button custom-accordion-about__button" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                            <span class="bi bi-award custom-accordion-about__icon"></span>
+                            Надёжность
                         </button>
-                    </li>
+                    </h3>
 
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link d-flex flex-column align-items-center g-2 fs-5 fw-semibold custom-nav-tabs__tab"
-                                id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab"
-                                aria-controls="second" aria-selected="false">
-                            <span class="bi bi-house-heart custom-nav-tabs__icon d-none d-lg-block"></span>
+                    <div id="collapseOne" class="accordion-collapse collapse show custom-accordion-about__collapse"
+                         aria-labelledby="headingOne" data-bs-parent="#accordion-about">
+                        <p class="accordion-body">
+                            Надежность - это ключевой фактор, который играет важную роль во многих сферах нашей жизни.
+                            Она является основой для создания долговременных и успешных отношений, как в личной,
+                            так и в деловой сфере.
+                        </p>
+                    </div>
+                </section>
 
-                            Второй таб
+                <section class="accordion-item custom-accordion-about__item">
+                    <h3 class="accordion-header custom-accordion-about__header" id="headingTwo">
+                        <button class="accordion-button custom-accordion-about__button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                            <span class="bi bi-house-heart custom-accordion-about__icon"></span>
+                            Широкий выбор
                         </button>
-                    </li>
+                    </h3>
 
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link d-flex flex-column align-items-center g-2 fs-5 fw-semibold custom-nav-tabs__tab"
-                                id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab"
-                                aria-controls="third" aria-selected="false">
-                            <span class="bi bi-people custom-nav-tabs__icon d-none d-lg-block"></span>
+                    <div id="collapseTwo" class="accordion-collapse collapse custom-accordion-about__collapse"
+                         aria-labelledby="headingTwo" data-bs-parent="#accordion-about">
+                        <p class="accordion-body">
+                            На нашем сайте вы найдете широкий выбор товаров для любых потребностей и вкусов.
+                            У нас представлены товары различных брендов и моделей, чтобы вы могли выбрать то,
+                            что идеально подходит именно вам.
+                        </p>
+                    </div>
+                </section>
 
-                            Третий таб
+                <section class="accordion-item custom-accordion-about__item">
+                    <h3 class="accordion-header custom-accordion-about__header" id="headingThree">
+                        <button class="accordion-button custom-accordion-about__button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                            <span class="bi bi-people custom-accordion-about__icon"></span>
+                            Экспертные консультации
                         </button>
-                    </li>
+                    </h3>
 
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link d-flex flex-column align-items-center g-2 fs-5 fw-semibold custom-nav-tabs__tab"
-                                id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourth" type="button" role="tab"
-                                aria-controls="fourth" aria-selected="false">
-                            <span class="bi bi-truck custom-nav-tabs__icon d-none d-lg-block"></span>
+                    <div id="collapseThree" class="accordion-collapse collapse custom-accordion-about__collapse"
+                         aria-labelledby="headingThree" data-bs-parent="#accordion-about">
+                        <p class="accordion-body">
+                            Экспертные консультации помогают сократить риски и принимать обоснованные решения.
+                        </p>
+                    </div>
+                </section>
 
-                            Четвёртый таб
+                <section class="accordion-item custom-accordion-about__item">
+                    <h3 class="accordion-header custom-accordion-about__header" id="headingFour">
+                        <button class="accordion-button custom-accordion-about__button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                            <span class="bi bi-truck custom-accordion-about__icon"></span>
+                            Быстрая доставка
                         </button>
-                    </li>
+                    </h3>
 
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link d-flex flex-column align-items-center g-2 fs-5 fw-semibold custom-nav-tabs__tab"
-                                id="fifth-tab" data-bs-toggle="tab" data-bs-target="#fifth" type="button" role="tab"
-                                aria-controls="fifth" aria-selected="false">
-                            <span class="bi bi-tags custom-nav-tabs__icon d-none d-lg-block"></span>
+                    <div id="collapseFour" class="accordion-collapse collapse custom-accordion-about__collapse"
+                         aria-labelledby="headingFour" data-bs-parent="#accordion-about">
+                        <p class="accordion-body">
+                            Мы гордимся предлагать нашим клиентам быструю доставку,
+                            которая обеспечивает своевременную доставку товаров прямо к вашей двери.
+                        </p>
+                    </div>
+                </section>
 
-                            Пятый таб
+                <section class="accordion-item custom-accordion-about__item">
+                    <h3 class="accordion-header custom-accordion-about__header" id="headingFive">
+                        <button class="accordion-button custom-accordion-about__button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                            <span class="bi bi-tags custom-accordion-about__icon"></span>
+                            Доступные цены
                         </button>
-                    </li>
-                </ul>
+                    </h3>
 
-                <div class="tab-content custom-nav-tabs__content" id="tab-about-content">
-                    <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Первый пункт, относящийся к первому табу, описывающий компанию Aerocoll
-                            </li>
-
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Второй пункт, относящийся к первому табу, описывающий компанию Aerocoll
-                            </li>
-
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Третий пункт, относящийся к первому табу, описывающий компанию Aerocoll
-                            </li>
-                        </ul>
+                    <div id="collapseFive" class="accordion-collapse collapse custom-accordion-about__collapse"
+                         aria-labelledby="headingFive" data-bs-parent="#accordion-about">
+                        <p class="accordion-body">
+                            Наш магазин предлагает широкий ассортимент товаров по доступным ценам.
+                            Мы стремимся сделать покупки доступными для всех покупателей,
+                            предоставляя высокое качество продукции по приемлемым ценам.
+                        </p>
                     </div>
-
-                    <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Первый пункт, относящийся ко второму табу, описывающий компанию Aerocoll
-                            </li>
-
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Второй пункт, относящийся ко второму табу, описывающий компанию Aerocoll
-                            </li>
-
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Третий пункт, относящийся ко второму табу, описывающий компанию Aerocoll
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Первый пункт, относящийся к третьему табу, описывающий компанию Aerocoll
-                            </li>
-
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Второй пункт, относящийся к третьему табу, описывающий компанию Aerocoll
-                            </li>
-
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Третий пункт, относящийся к третьему табу, описывающий компанию Aerocoll
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Первый пункт, относящийся к четвёртому табу, описывающий компанию Aerocoll
-                            </li>
-
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Второй пункт, относящийся к четвёртому табу, описывающий компанию Aerocoll
-                            </li>
-
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Третий пункт, относящийся к четвёртому табу, описывающий компанию Aerocoll
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-pane fade" id="fifth" role="tabpanel" aria-labelledby="fifth-tab">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Первый пункт, относящийся к пятому табу, описывающий компанию Aerocoll
-                            </li>
-
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Второй пункт, относящийся к пятому табу, описывающий компанию Aerocoll
-                            </li>
-
-                            <li class="list-group-item py-3 custom-nav-tabs__content-item">
-                                Третий пункт, относящийся к пятому табу, описывающий компанию Aerocoll
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
     </section>

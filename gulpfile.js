@@ -16,6 +16,9 @@ const named = require('vinyl-named');
 const atImport = require('postcss-import');
 
 const plugins = [
+    'node_modules/swiper/swiper.min.css',
+    'node_modules/swiper/modules/navigation.min.css',
+    'node_modules/swiper/modules/pagination.min.css',
     'node_modules/bootstrap/dist/css/bootstrap.min.css'
 ];
 
