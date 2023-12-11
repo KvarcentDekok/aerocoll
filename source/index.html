@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html" class="h-100">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" class="min-vh-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,23 +9,23 @@
 
     <title>Aerocoll</title>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column min-vh-100">
 @@include('fragments/header.html', {active: ''})
 
 <main>
     <h1 class="visually-hidden">Aerocoll</h1>
 
-    <article class="swiper custom-slider mb-5">
+    <article class="swiper custom-slider home-slider mb-5">
         <h2 class="visually-hidden">Стартовое слайдшоу</h2>
 
-        <ol class="swiper-wrapper custom-slider__wrapper">
-            <li class="swiper-slide custom-slider__slide">
-                <img src="img/image-placeholder.svg" class="custom-slider__image" alt="...">
+        <ol class="swiper-wrapper home-slider__wrapper">
+            <li class="swiper-slide home-slider__slide">
+                <img src="img/image-placeholder.svg" class="home-slider__image" alt="...">
 
-                <div class="custom-slider__content text-center">
-                    <h3 class="text-white custom-slider__title">Первый слайд</h3>
+                <div class="home-slider__content text-center">
+                    <h3 class="text-white home-slider__title">Первый слайд</h3>
 
-                    <p class="mt-4 text-white custom-slider__text d-none d-md-block">
+                    <p class="mt-4 text-white home-slider__text d-none d-md-block">
                         Небольшой контент, отражающий суть первого слайда
                     </p>
 
@@ -33,13 +33,13 @@
                 </div>
             </li>
 
-            <li class="swiper-slide custom-slider__slide">
-                <img src="img/image-placeholder.svg" class="custom-slider__image" alt="...">
+            <li class="swiper-slide home-slider__slide">
+                <img src="img/image-placeholder.svg" class="home-slider__image" alt="...">
 
-                <div class="custom-slider__content text-center">
-                    <h3 class="text-white custom-slider__title">Второй слайд</h3>
+                <div class="home-slider__content text-center">
+                    <h3 class="text-white home-slider__title">Второй слайд</h3>
 
-                    <p class="mt-4 text-white custom-slider__text d-none d-md-block">
+                    <p class="mt-4 text-white home-slider__text d-none d-md-block">
                         Небольшой контент, отражающий суть второго слайда
                     </p>
 
@@ -47,13 +47,13 @@
                 </div>
             </li>
 
-            <li class="swiper-slide custom-slider__slide">
-                <img src="img/image-placeholder.svg" class="custom-slider__image" alt="...">
+            <li class="swiper-slide home-slider__slide">
+                <img src="img/image-placeholder.svg" class="home-slider__image" alt="...">
 
-                <div class="custom-slider__content text-center">
-                    <h3 class="text-white custom-slider__title">Третий слайд</h3>
+                <div class="home-slider__content text-center">
+                    <h3 class="text-white home-slider__title">Третий слайд</h3>
 
-                    <p class="mt-4 text-white custom-slider__text d-none d-md-block">
+                    <p class="mt-4 text-white home-slider__text d-none d-md-block">
                         Небольшой контент, отражающий суть третьего слайда
                     </p>
 
@@ -62,10 +62,14 @@
             </li>
         </ol>
 
-        <div class="swiper-pagination custom-slider__pagination"></div>
+        <div class="swiper-pagination home-slider__pagination"></div>
 
-        <button type="button" class="swiper-button-prev custom-slider__button"></button>
-        <button type="button" class="swiper-button-next custom-slider__button"></button>
+        <button type="button"
+                class="swiper-button-prev custom-slider__button home-slider__button home-slider__button--prev">
+        </button>
+        <button type="button"
+                class="swiper-button-next custom-slider__button home-slider__button home-slider__button--next">
+        </button>
     </article>
 
     <div class="container">
@@ -203,7 +207,99 @@
         <div class="container">
             <h2 class="text-center mb-4">Новости</h2>
 
-            <div class="row gy-4">
+            <article class="swiper custom-slider news-slider mb-5 pb-3">
+                <h2 class="visually-hidden">Стартовое слайдшоу</h2>
+
+                <ol class="swiper-wrapper p-0">
+                    <li class="swiper-slide custom-slider__slide">
+                        <article class="card custom-news-card" aria-labelledby="news-card-title-1">
+                            <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <a href="#" id="news-card-title-1"
+                                   class="card-title stretched-link custom-news-card__title">
+                                    Интересная новость
+                                </a>
+
+                                <p class="card-text">Контент, вкратце описывающий интересную новость.</p>
+
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <time datetime="2023-08-12">08/12/23</time>
+                                    </small>
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <article class="card custom-news-card" aria-labelledby="news-card-title-2">
+                            <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <a href="#" id="news-card-title-2"
+                                   class="card-title stretched-link custom-news-card__title">
+                                    Интересная новость
+                                </a>
+
+                                <p class="card-text">Контент, вкратце описывающий интересную новость.</p>
+
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <time datetime="2023-08-12">08/12/23</time>
+                                    </small>
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <article class="card custom-news-card" aria-labelledby="news-card-title-3">
+                            <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <a href="#" id="news-card-title-3"
+                                   class="card-title stretched-link custom-news-card__title">
+                                    Интересная новость
+                                </a>
+
+                                <p class="card-text">Контент, вкратце описывающий интересную новость.</p>
+
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <time datetime="2023-08-12">08/12/23</time>
+                                    </small>
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <article class="card custom-news-card" aria-labelledby="news-card-title-4">
+                            <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <a href="#" id="news-card-title-4"
+                                   class="card-title stretched-link custom-news-card__title">
+                                    Интересная новость
+                                </a>
+
+                                <p class="card-text">Контент, вкратце описывающий интересную новость.</p>
+
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <time datetime="2023-08-12">08/12/23</time>
+                                    </small>
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                </ol>
+
+                <div class="swiper-pagination news-slider__pagination"></div>
+            </article>
+
+            <!--<div class="row gy-4">
                 <div class="col-12 col-md-6 col-xl-3">
                     <article class="card custom-news-card" aria-labelledby="news-card-title-1">
                         <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
@@ -287,7 +383,7 @@
                         </div>
                     </article>
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
 </main>
