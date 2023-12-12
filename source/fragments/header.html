@@ -30,7 +30,7 @@
             <div class="col-3 col-xl-2 d-none d-lg-flex">
                 <button type="button" class="btn btn-outline-primary ms-auto" data-bs-toggle="modal"
                         data-bs-target="#leave-request">
-                    Оставить запрос
+                    Отправить запрос
                 </button>
             </div>
         </div>
@@ -69,19 +69,21 @@
 
                     <li class="btn-group nav-item custom-dropdown custom-dropdown--no-position">
                         @@if (active === 'production') {
-                        <a href="#" id="products-dropdown"
+                        <a href="production.html" id="products-dropdown"
                            class="nav-link text-uppercase py-3 custom-dropdown__link active" aria-current="page">
                             Продукция
                         </a>
                         }
 
                         @@if (active !== 'production') {
-                        <a href="#" id="products-dropdown" class="nav-link text-uppercase py-3 custom-dropdown__link">
+                        <a href="production.html" id="products-dropdown"
+                           class="nav-link text-uppercase py-3 custom-dropdown__link">
                             Продукция
                         </a>
                         }
 
-                        <a href="#" class="nav-link dropdown-toggle py-3 custom-dropdown__toggle dropdown-toggle-split"
+                        <a href="production.html"
+                           class="nav-link dropdown-toggle py-3 custom-dropdown__toggle dropdown-toggle-split"
                            aria-expanded="false">
                             <span class="visually-hidden">Переключатель выпадающего списка</span>
                         </a>

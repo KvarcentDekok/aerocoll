@@ -1,14 +1,18 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 export function initSliderMain() {
     const sliderMain = new Swiper('.home-slider', {
-        modules: [Navigation, Pagination],
+        modules: [Navigation, Pagination, Autoplay],
         spaceBetween: 0,
         slidesPerView: 1,
         loop: true,
         lazy: true,
-        autoplay: true,
+
+        autoplay: {
+            delay: 3000,
+            pauseOnMouseEnter: true
+        },
 
         navigation: {
             nextEl: '.home-slider__button--next',
@@ -19,7 +23,28 @@ export function initSliderMain() {
             el: '.home-slider__pagination',
             bulletActiveClass: 'home-slider__bullet--active',
             clickable: true
-        }
+        },
+
+        breakpoints: {
+            0: {
+                navigation: {
+                    enabled: false
+                },
+
+                pagination: {
+                    enabled: true
+                }
+            },
+            768: {
+                navigation: {
+                   enabled: true
+                },
+
+                pagination: {
+                    enabled: false
+                }
+            }
+        },
     });
 }
 

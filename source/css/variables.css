@@ -22,3 +22,7 @@
 .breadcrumb {
     --bs-breadcrumb-divider-color: #FFFFFF;
 }
+
+.custom-breadcrumb--dark {
+    --bs-breadcrumb-divider-color: var(--bs-secondary-color);
+}

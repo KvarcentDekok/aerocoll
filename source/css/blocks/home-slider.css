@@ -64,6 +64,10 @@
 }
 
 @media (max-width: 576px) {
+    .home-slider__slide {
+        height: 50vw;
+    }
+
     .home-slider__title {
         font-size: 24px;
     }

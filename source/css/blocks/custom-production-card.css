@@ -1,0 +1,7 @@
+.custom-production-card__title {
+    transition: all 200ms linear;
+}
+
+.custom-production-card:hover .custom-production-card__title {
+    color: var(--primary-bright-color);
+}
