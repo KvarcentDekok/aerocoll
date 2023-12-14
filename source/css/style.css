@@ -3,7 +3,7 @@
 @import "variables.css";
 
 @import "blocks/custom-dropdown.css";
-@import "blocks/custom-nav-link.css";
+@import "blocks/custom-navbar.css";
 @import "blocks/home.css";
 @import "blocks/text-primary-bright.css";
 @import "blocks/custom-overlay-card.css";

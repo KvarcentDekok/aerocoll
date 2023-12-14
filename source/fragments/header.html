@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0 custom-navbar">
         <div class="container">
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-around">
@@ -224,14 +224,14 @@
 
                     <li class="nav-item">
                         @@if (active === 'contacts') {
-                        <a class="nav-link text-uppercase pt-3 pb-3 custom-nav-link active" href="contacts.html"
+                        <a class="nav-link text-uppercase pt-3 pb-3 custom-navbar__link active" href="contacts.html"
                            aria-current="page">
                             Контакты
                         </a>
                         }
 
                         @@if (active !== 'contacts') {
-                        <a class="nav-link text-uppercase pt-3 pb-3 custom-nav-link" href="contacts.html">Контакты</a>
+                        <a class="nav-link text-uppercase pt-3 pb-3 custom-navbar__link" href="contacts.html">Контакты</a>
                         }
                     </li>
                 </ul>

@@ -1,11 +1,15 @@
-.custom-nav-link {
+.custom-navbar__link {
     height: 100%;
     border-top: 1px solid var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
 }
 
-.custom-nav-link:hover {
+.custom-navbar__link:hover {
     color: var(--primary-color);
 
     background-color: #FFFFFF;
+}
+
+.custom-navbar .custom-navbar__link.active:hover {
+    color: var(--primary-color);
 }
