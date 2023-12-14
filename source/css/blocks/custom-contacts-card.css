@@ -1,0 +1,14 @@
+.custom-contacts-card__icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+
+    color: #FFFFFF;
+    font-size: 45px;
+
+    background-color: var(--primary-bright-color);
+    border-radius: 50%;
+}

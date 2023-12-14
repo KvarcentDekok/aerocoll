@@ -40,53 +40,45 @@
         <div class="container">
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-around">
-                    <li class="btn-group nav-item custom-dropdown">
+                    <li class="nav-item dropdown custom-dropdown">
                         @@if (active === 'about') {
                         <a href="about.html" id="about-dropdown"
-                           class="nav-link text-uppercase py-3 active custom-dropdown__link" aria-current="page">
+                           class="nav-link dropdown-toggle text-uppercase py-3 active custom-dropdown__toggle"
+                           aria-current="page" aria-expanded="false">
                             О компании
                         </a>
                         }
 
                         @@if (active !== 'about') {
                         <a href="about.html" id="about-dropdown"
-                           class="nav-link text-uppercase py-3 custom-dropdown__link">
+                           class="nav-link dropdown-toggle text-uppercase py-3 custom-dropdown__toggle"
+                           aria-expanded="false">
                             О компании
                         </a>
                         }
 
-                        <a href="about.html" class="nav-link dropdown-toggle py-3 custom-dropdown__toggle dropdown-toggle-split"
-                           aria-expanded="false">
-                            <span class="visually-hidden">Переключатель выпадающего списка</span>
-                        </a>
-
-                        <ul class="dropdown-menu custom-dropdown__menu"
-                            aria-labelledby="about-dropdown">
+                        <ul class="dropdown-menu custom-dropdown__menu" aria-labelledby="about-dropdown">
                             <li><a class="dropdown-item text-uppercase" href="#">Политика качества</a></li>
                             <li><a class="dropdown-item text-uppercase" href="#">Новости</a></li>
                         </ul>
                     </li>
 
-                    <li class="btn-group nav-item custom-dropdown custom-dropdown--no-position">
+                    <li class="nav-item dropdown custom-dropdown custom-dropdown--no-position">
                         @@if (active === 'production') {
                         <a href="production.html" id="products-dropdown"
-                           class="nav-link text-uppercase py-3 custom-dropdown__link active" aria-current="page">
+                           class="nav-link dropdown-toggle text-uppercase py-3 custom-dropdown__toggle active"
+                           aria-current="page" aria-expanded="false">
                             Продукция
                         </a>
                         }
 
                         @@if (active !== 'production') {
                         <a href="production.html" id="products-dropdown"
-                           class="nav-link text-uppercase py-3 custom-dropdown__link">
+                           class="nav-link dropdown-toggle text-uppercase py-3 custom-dropdown__toggle"
+                           aria-expanded="false">
                             Продукция
                         </a>
                         }
-
-                        <a href="production.html"
-                           class="nav-link dropdown-toggle py-3 custom-dropdown__toggle dropdown-toggle-split"
-                           aria-expanded="false">
-                            <span class="visually-hidden">Переключатель выпадающего списка</span>
-                        </a>
 
                         <div class="dropdown-menu p-4 start-50 translate-middle-x custom-dropdown__menu custom-dropdown__menu--width-max"
                              aria-labelledby="products-dropdown">
@@ -129,86 +121,99 @@
                         </div>
                     </li>
 
-                    <li class="btn-group nav-item custom-dropdown custom-dropdown--no-position">
-                        <a href="#" id="service-dropdown" class="nav-link text-uppercase py-3 custom-dropdown__link">
-                            Сервис и услуги
+                    <li class="nav-item dropdown custom-dropdown custom-dropdown--no-position">
+                        @@if (active === 'cooperation') {
+                        <a href="#" id="service-dropdown"
+                           class="nav-link dropdown-toggle text-uppercase py-3 custom-dropdown__toggle active"
+                           aria-current="page" aria-expanded="false">
+                            Сотрудничество
                         </a>
+                        }
 
-                        <a href="#" class="nav-link dropdown-toggle py-3 custom-dropdown__toggle dropdown-toggle-split"
+                        @@if (active !== 'cooperation') {
+                        <a href="cooperation.html" id="service-dropdown"
+                           class="nav-link dropdown-toggle text-uppercase py-3 custom-dropdown__toggle"
                            aria-expanded="false">
-                            <span class="visually-hidden">Переключатель выпадающего списка</span>
+                            Сотрудничество
                         </a>
+                        }
 
                         <div class="dropdown-menu p-4 start-50 translate-middle-x custom-dropdown__menu custom-dropdown__menu--width-max"
                              aria-labelledby="service-dropdown">
                             <ul class="row list-unstyled gy-4">
-                                <li class="col-2">
+                                <li class="col">
                                     <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
 
                                         <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Сервис
+                                            <a href="cooperation.html#order"
+                                               class="link-secondary stretched-link text-decoration-none">
+                                                Заявка
                                             </a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="col-2">
+                                <li class="col">
                                     <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
 
                                         <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Услуга
+                                            <a href="cooperation.html#selection"
+                                               class="link-secondary stretched-link text-decoration-none">
+                                                Подбор клея
                                             </a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="col-2">
+                                <li class="col">
                                     <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
 
                                         <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Услуга
+                                            <a href="cooperation.html#testing"
+                                               class="link-secondary stretched-link text-decoration-none">
+                                                Тестирование
                                             </a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="col-2">
+                                <li class="col">
                                     <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
 
                                         <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Сервис
+                                            <a href="cooperation.html#delivery"
+                                               class="link-secondary stretched-link text-decoration-none">
+                                                Доставка
                                             </a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="col-2">
+                                <li class="col">
                                     <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
 
                                         <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Услуга
+                                            <a href="cooperation.html#payment"
+                                               class="link-secondary stretched-link text-decoration-none">
+                                                Оплата
                                             </a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="col-2">
+                                <li class="col">
                                     <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="...">
+                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
 
                                         <div class="card-body">
-                                            <a href="#" class="link-secondary stretched-link text-decoration-none">
-                                                Услуга
+                                            <a href="cooperation.html#support"
+                                               class="link-secondary stretched-link text-decoration-none">
+                                                Поддержка
                                             </a>
                                         </div>
                                     </div>
@@ -217,25 +222,17 @@
                         </div>
                     </li>
 
-                    <li class="btn-group nav-item custom-dropdown">
-                        <a href="#" id="documents-dropdown" class="nav-link text-uppercase py-3 custom-dropdown__link">
-                            Документы
-                        </a>
-
-                        <a href="#" class="nav-link dropdown-toggle py-3 custom-dropdown__toggle dropdown-toggle-split"
-                           aria-expanded="false">
-                            <span class="visually-hidden">Переключатель выпадающего списка</span>
-                        </a>
-
-                        <ul class="dropdown-menu custom-dropdown__menu"
-                            aria-labelledby="documents-dropdown">
-                            <li><a class="dropdown-item text-uppercase" href="#">Сертификаты</a></li>
-                            <li><a class="dropdown-item text-uppercase" href="#">Каталоги</a></li>
-                        </ul>
-                    </li>
-
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase pt-3 pb-3 custom-nav-link" href="#">Контакты</a>
+                        @@if (active === 'contacts') {
+                        <a class="nav-link text-uppercase pt-3 pb-3 custom-nav-link active" href="contacts.html"
+                           aria-current="page">
+                            Контакты
+                        </a>
+                        }
+
+                        @@if (active !== 'contacts') {
+                        <a class="nav-link text-uppercase pt-3 pb-3 custom-nav-link" href="contacts.html">Контакты</a>
+                        }
                     </li>
                 </ul>
             </div>

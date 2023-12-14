@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" class="min-vh-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Контакты | Aerocoll</title>
+</head>
+<body class="contacts-page d-flex flex-column h-100">
+@@include('fragments/header.html', {active: 'contacts'})
+
+<main>
+    <div class="home contacts-category-page__home">
+        <div class="container d-flex min-vh-100">
+            <div class="home__title-block bg-primary mt-auto p-5">
+                <h1 class="text-white mb-4">Контакты</h1>
+
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="link-light" href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">Контакты</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pb-5">
+        <ul class="row list-unstyled gy-4">
+            <li class="col-12 col-md-6 col-lg-4">
+                <article class="card text-center custom-contacts-card h-100 p-4">
+                    <div class="card-body">
+                        <span class="bi bi-telephone-forward custom-contacts-card__icon"></span>
+
+                        <h2 class="card-title fs-6 mb-3">Горячая линия Aerocoll</h2>
+
+                        <p class="card-text">
+                            с 8.30 до 17.00 по будням звонок бесплатный по РФ <br>
+                            <a href="tel:+79999999999" class="link-primary">+7 999 999 99 99</a>
+                        </p>
+                    </div>
+                </article>
+            </li>
+
+            <li class="col-12 col-md-6 col-lg-4">
+                <article class="card text-center custom-contacts-card h-100 p-4">
+                    <div class="card-body">
+                        <span class="bi bi-person-workspace custom-contacts-card__icon"></span>
+
+                        <h2 class="card-title fs-6 mb-3">Служба технической поддержки</h2>
+
+                        <p class="card-text">
+                            строительные материалы канал в <br>
+                            <a href="https://t.me" class="link-primary">Telegram</a>
+                        </p>
+                    </div>
+                </article>
+            </li>
+
+            <li class="col-12 col-md-6 col-lg-4">
+                <article class="card text-center custom-contacts-card h-100 p-4">
+                    <div class="card-body">
+                        <span class="bi bi-file-earmark-arrow-down custom-contacts-card__icon"></span>
+
+                        <h2 class="card-title fs-6 mb-3">Реквизиты Aerocoll</h2>
+
+                        <p class="card-text">
+                            <a href="#" class="link-primary">Скачать</a>
+                        </p>
+                    </div>
+                </article>
+            </li>
+
+            <li class="col-12 col-md-6 col-lg-4">
+                <article class="card text-center custom-contacts-card h-100 p-4">
+                    <div class="card-body">
+                        <h2 class="card-title fs-6 mb-3">Головной офис в Мидгарде</h2>
+
+                        <p class="card-text">
+                            ул. Смысла, дом 42
+                        </p>
+                    </div>
+                </article>
+            </li>
+
+            <li class="col-12 col-md-6 col-lg-4">
+                <article class="card text-center custom-contacts-card h-100 p-4">
+                    <div class="card-body">
+                        <h2 class="card-title fs-6 mb-3">Офис в Асгарде</h2>
+
+                        <p class="card-text">
+                            ул. Одина, дом 39
+                        </p>
+                    </div>
+                </article>
+            </li>
+
+            <li class="col-12 col-md-6 col-lg-4">
+                <article class="card text-center custom-contacts-card h-100 p-4">
+                    <div class="card-body">
+                        <h2 class="card-title fs-6 mb-3">Склад в Хельхейме</h2>
+
+                        <p class="card-text">
+                            ул. Хель, дом 8
+                        </p>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </div>
+</main>
+
+@@include('fragments/footer.html')
+
+<script src="js/general.js"></script>
+</body>
+</html>

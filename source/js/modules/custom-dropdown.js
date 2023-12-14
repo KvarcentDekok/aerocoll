@@ -1,34 +1,17 @@
 import Dropdown from "bootstrap/js/src/dropdown";
 
+const DESKTOP_WINDOW_WIDTH = 992;
+
 const customDropdowns = document.querySelectorAll('.custom-dropdown');
 const dropdownElementList = [].slice.call(document.querySelectorAll('.custom-dropdown__toggle'));
-const dropdownList = dropdownElementList.map((dropdownToggleElement) => {
-    return new Dropdown(dropdownToggleElement);
-});
 
-function dropdownMouseOverHandler(index) {
-    dropdownList[index].show();
-}
+let dropdownList = [];
 
-function dropdownMouseOutHandler(index) {
-    dropdownList[index].hide();
-}
+function initDropdowns() {
+    dropdownList = dropdownElementList.map((dropdownToggleElement) => {
+        return new Dropdown(dropdownToggleElement);
+    });
 
-function dropdownFocusOutHandler(evt, index) {
-    let relatedTarget = evt.relatedTarget;
-
-    while (relatedTarget && relatedTarget !== document.body) {
-        if (relatedTarget.classList.contains('custom-dropdown__menu')) {
-            return;
-        }
-
-        relatedTarget = relatedTarget.parentNode;
-    }
-
-    dropdownList[index].hide();
-}
-
-function customDropdown() {
     for (let i = 0; i < customDropdowns.length; i++) {
         const toggleElement = customDropdowns[i].querySelector('.custom-dropdown__toggle');
         const menuElement = customDropdowns[i].querySelector('.custom-dropdown__menu');
@@ -61,6 +44,48 @@ function customDropdown() {
             dropdownFocusOutHandler(evt, i);
         });
     }
+}
+
+function dropdownMouseOverHandler(index) {
+    dropdownList[index].show();
+}
+
+function dropdownMouseOutHandler(index) {
+    dropdownList[index].hide();
+}
+
+function dropdownFocusOutHandler(evt, index) {
+    let relatedTarget = evt.relatedTarget;
+
+    while (relatedTarget && relatedTarget !== document.body) {
+        if (relatedTarget.classList.contains('custom-dropdown__menu')) {
+            return;
+        }
+
+        relatedTarget = relatedTarget.parentNode;
+    }
+
+    dropdownList[index].hide();
+}
+
+function customDropdown() {
+    if (document.body.clientWidth > DESKTOP_WINDOW_WIDTH) {
+        initDropdowns();
+    }
+
+    window.addEventListener('resize', () => {
+        if (document.body.clientWidth > DESKTOP_WINDOW_WIDTH && !dropdownList.length) {
+            initDropdowns();
+        }
+
+        if (document.body.clientWidth <= DESKTOP_WINDOW_WIDTH && dropdownList.length) {
+            for (let i = 0; i < dropdownList.length; i++) {
+                dropdownList[i].dispose();
+            }
+
+            dropdownList = [];
+        }
+    });
 }
 
 export {customDropdown};
