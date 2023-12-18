@@ -2,6 +2,7 @@
     --primary-color: #11204E;
     --primary-bright-color: #3450A3;
     --primary-color-rgb: 17, 32, 78;
+    --color-pale-blue: rgba(0, 0, 100, 0.2);
     --bs-blue: var(--primary-color);
     --bs-primary: var(--primary-color);
     --bs-primary-rgb: var(--primary-color-rgb);

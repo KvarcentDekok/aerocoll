@@ -9,24 +9,239 @@
 
     <title>О компании Aerocoll</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body class="about-page d-flex flex-column min-vh-100">
 @@include('fragments/header.html', {active: 'about'})
 
 <main>
-    <div class="container">
-        <h1 class="my-4">О компании</h1>
+    <div class="home about-page__home">
+        <div class="container d-flex h-100">
+            <div class="home__title-block bg-primary mt-auto p-5">
+                <h1 class="text-white mb-4">О компании</h1>
 
-        <p class="lead">
-            Компания Новамелт имеет долгую и успешную историю поставок немецких качественных промышленных видов клея
-            по различным направлениям. С 2018 года на территории России было локализовано производство широкого спектра
-            промышленного клея по собственным немецким рецептурам. Продукция под брендом Aerocoll представлена в двух
-            рыночных сегментах: водные промышленные клея и строительно-отделочные материалы. Наша основная цель
-            заключается в разработке и дальнейших поставках лучших технических решений для удовлетворения основных
-            потребностей наших клиентов. Нашей сильной стороной является возможность предложить широкий ассортимент
-            клея, индивидуальный подход к решению каждой задачи нашего заказчика, стабильное качество
-            и комплексное обслуживание.
-        </p>
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="link-light" href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">О компании</li>
+                </ol>
+            </div>
+        </div>
     </div>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="text-center mb-0 mb-lg-4">Ключевые преимущества</h2>
+
+            <div class="features__wrapper">
+                <div class="features__brand">
+                    <img src="img/logo.webp" class="features__brand-image" alt="Логотип Aerocoll" width="200"
+                         height="60">
+                </div>
+
+                <ul class="features__list py-5">
+                    <li class="features__item">
+                        <h3 class="features__item-title">Надежность нашей компании</h3>
+
+                        <p class="m-0">
+                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
+                            только лучший сервис, потому что это наш стиль работы
+                        </p>
+
+                        <span class="bi bi-star-fill features__item-icon"></span>
+                    </li>
+
+                    <li class="features__item">
+                        <h3 class="features__item-title">Надежность нашей компании</h3>
+
+                        <p class="m-0">
+                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
+                            только лучший сервис, потому что это наш стиль работы
+                        </p>
+
+                        <span class="bi bi-star-fill features__item-icon"></span>
+                    </li>
+
+                    <li class="features__item">
+                        <h3 class="features__item-title">Надежность нашей компании</h3>
+
+                        <p class="m-0">
+                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
+                            только лучший сервис, потому что это наш стиль работы
+                        </p>
+
+                        <span class="bi bi-star-fill features__item-icon"></span>
+                        <div class="features__item-hover" aria-hidden="true"></div>
+                    </li>
+
+                    <li class="features__item">
+                        <h3 class="features__item-title">Надежность нашей компании</h3>
+
+                        <p class="m-0">
+                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
+                            только лучший сервис, потому что это наш стиль работы
+                        </p>
+
+                        <span class="bi bi-star-fill features__item-icon"></span>
+                        <div class="features__item-hover" aria-hidden="true"></div>
+                    </li>
+
+                    <li class="features__item">
+                        <h3 class="features__item-title">Надежность нашей компании</h3>
+
+                        <p class="m-0">
+                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
+                            только лучший сервис, потому что это наш стиль работы
+                        </p>
+
+                        <span class="bi bi-star-fill features__item-icon"></span>
+                    </li>
+
+                    <li class="features__item">
+                        <h3 class="features__item-title">Надежность нашей компании</h3>
+
+                        <p class="m-0">
+                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
+                            только лучший сервис, потому что это наш стиль работы
+                        </p>
+
+                        <span class="bi bi-star-fill features__item-icon"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-3 pb-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Основные направления деятельности</h2>
+        </div>
+
+        <ul class="list-unstyled d-flex flex-column gap-5">
+            <li class="card rounded-0 border-0 custom-activity-card custom-activity-card--bg-left">
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="img/image-placeholder.svg" class="img-fluid custom-activity-card__image"
+                                 alt="...">
+                        </div>
+
+                        <div class="col-md-7">
+                            <div class="card-body py-5 px-0 p-md-5">
+                                <h3 class="card-title fs-5">
+                                    Направление деятельности <span class="text-primary-bright">Aerocoll</span>
+                                </h3>
+
+                                <p class="card-text">
+                                    Очень весьма даже длинноватое, но не слишком уж прямо сильно длинное описание
+                                    направления деятельности.
+                                </p>
+
+                                <a href="#" class="btn btn-primary btn-lg">Ссылка</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card rounded-0 border-0 custom-activity-card custom-activity-card--bg-right">
+                <div class="container">
+                    <div class="row g-0 flex-row-reverse">
+                        <div class="col-md-5">
+                            <img src="img/image-placeholder.svg" class="img-fluid custom-activity-card__image"
+                                 alt="...">
+                        </div>
+
+                        <div class="col-md-7">
+                            <div class="card-body py-5 px-0 p-md-5">
+                                <h3 class="card-title fs-5">
+                                    Направление деятельности <span class="text-primary-bright">Aerocoll</span>
+                                </h3>
+
+                                <p class="card-text">
+                                    Очень весьма даже длинноватое, но не слишком уж прямо сильно длинное описание
+                                    направления деятельности.
+                                </p>
+
+                                <a href="#" class="btn btn-primary btn-lg">Ссылка</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card rounded-0 border-0 custom-activity-card custom-activity-card--bg-left">
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="img/image-placeholder.svg" class="img-fluid custom-activity-card__image"
+                                 alt="...">
+                        </div>
+
+                        <div class="col-md-7">
+                            <div class="card-body py-5 px-0 p-md-5">
+                                <h3 class="card-title fs-5">
+                                    Направление деятельности <span class="text-primary-bright">Aerocoll</span>
+                                </h3>
+
+                                <p class="card-text">
+                                    Очень весьма даже длинноватое, но не слишком уж прямо сильно длинное описание
+                                    направления деятельности.
+                                </p>
+
+                                <a href="#" class="btn btn-primary btn-lg">Ссылка</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="pb-5">
+        <div class="container">
+            <h2 class="text-center mb-2 mb-lg-5">География поставок</h2>
+
+            <div class="card rounded-0 border-0">
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <div class="card-body pb-3 px-0 p-lg-5">
+                            <ul class="list-unstyled d-flex flex-column gap-4">
+                                <li class="d-flex gap-3">
+                                    <span class="bi bi-truck-flatbed text-primary-bright fs-4"></span>
+
+                                    <div>
+                                        <h3 class="card-title fs-5 mt-2">Отгрузка со склада Aerocoll</h3>
+
+                                        <p class="card-text">
+                                            Уважаемые партнеры! Для вашего удобства мы организовали и поддерживаем огромный
+                                            складской запас и богатый ассортимент клея на нашем складе.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="d-flex gap-3">
+                                    <span class="bi bi-truck text-primary-bright fs-4"></span>
+
+                                    <div>
+                                        <h3 class="card-title fs-5 mt-1">Доставка</h3>
+
+                                        <p class="card-text">
+                                            Уважаемые партнеры! Для вашего удобства мы организовали качественную службу
+                                            доставки клея транспортными компаниями по всей России.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <a href="contacts.html" class="btn btn-primary mt-3">Наши контакты</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img src="img/image-placeholder.svg" class="img-fluid w-100 h-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 @@include('fragments/footer.html')

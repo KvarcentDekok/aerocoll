@@ -1,0 +1,14 @@
+.custom-activity-card__image {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .custom-activity-card--bg-left {
+        background-image: linear-gradient(to right, var(--color-pale-blue) 0%, transparent 35%);
+    }
+
+    .custom-activity-card--bg-right {
+        background-image: linear-gradient(to left, var(--color-pale-blue) 0%, transparent 35%);
+    }
+}
