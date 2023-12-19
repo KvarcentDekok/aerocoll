@@ -1,0 +1,9 @@
+.cooperation-page__home {
+    background: rgba(0, 0, 0, 0.5) url("../../img/bg-cooperation-desktop.webp") no-repeat center / cover;
+}
+
+@media (max-width: 768px) {
+    .cooperation-page__home {
+        background: rgba(0, 0, 0, 0.5) url("../../img/bg-cooperation-mobile.webp") no-repeat center / cover;
+    }
+}
