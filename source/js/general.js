@@ -1,7 +1,4 @@
 import 'bootstrap';
-import {customDropdown} from "./modules/custom-dropdown";
-import {initSliderMain, initSliderNews} from "./modules/slider";
+import {customDropdown} from './modules/custom-dropdown';
 
 customDropdown();
-initSliderMain();
-initSliderNews();

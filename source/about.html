@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <title>О компании Aerocoll</title>
+
+    <style>
+        .swiper {
+            width: 450px;
+            height: 450px;
+            margin: 0 auto;
+
+        }
+
+        .swiper-slide {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            background-color: var(--primary-bright-color);
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body class="about-page d-flex flex-column min-vh-100">
 @@include('fragments/header.html', {active: 'about'})
@@ -105,6 +126,56 @@
                         <span class="bi bi-star-fill features__item-icon"></span>
                     </li>
                 </ul>
+            </div>
+
+            <div class="swiper mySwiper mb-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-center text-white">
+                        <span class="bi bi-star-fill" style="font-size: 90px"></span>
+
+                        <h3>Надежность нашей компании</h3>
+
+                        <p>
+                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
+                            только лучший сервис, потому что это наш стиль работы
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide text-center text-white">
+                        <span class="bi bi-star-fill" style="font-size: 90px"></span>
+
+                        <h3>Надежность нашей компании</h3>
+
+                        <p>
+                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
+                            только лучший сервис, потому что это наш стиль работы
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide text-center text-white">
+                        <span class="bi bi-star-fill" style="font-size: 90px"></span>
+
+                        <h3>Надежность нашей компании</h3>
+
+                        <p>
+                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
+                            только лучший сервис, потому что это наш стиль работы
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide text-center text-white">
+                        <span class="bi bi-star-fill" style="font-size: 90px"></span>
+
+                        <h3>Надежность нашей компании</h3>
+
+                        <p>
+                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
+                            только лучший сервис, потому что это наш стиль работы
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -247,5 +318,6 @@
 @@include('fragments/footer.html')
 
 <script src="js/general.js"></script>
+<script src="js/about.js"></script>
 </body>
 </html>

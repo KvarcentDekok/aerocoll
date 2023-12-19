@@ -19,6 +19,7 @@ const plugins = [
     'node_modules/swiper/swiper.min.css',
     'node_modules/swiper/modules/navigation.min.css',
     'node_modules/swiper/modules/pagination.min.css',
+    'node_modules/swiper/modules/effect-cube.min.css',
     'node_modules/bootstrap/dist/css/bootstrap.min.css'
 ];
 
@@ -56,7 +57,9 @@ gulp.task("html", () => {
 
 gulp.task("js", () => {
     return gulp.src([
-        './source/js/general.js'
+        './source/js/general.js',
+        './source/js/index.js',
+        './source/js/about.js'
     ])
         .pipe(named())
         .pipe(webpackStream(webpackConfig))
