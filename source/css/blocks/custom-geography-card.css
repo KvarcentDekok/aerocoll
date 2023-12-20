@@ -1,0 +1,22 @@
+.custom-geography-card__image-container {
+    min-height: 400px;
+
+    position: relative;
+
+    overflow: hidden;
+    border-radius: var(--bs-border-radius);
+    box-shadow: var(--bs-box-shadow);
+}
+
+.custom-geography-card__image {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}

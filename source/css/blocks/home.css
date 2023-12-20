@@ -5,7 +5,10 @@
     height: 450px;
     margin-bottom: calc(var(--margin-bottom) * 2);
 
-    background: url("../../img/image-placeholder.svg") no-repeat center / cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .home__title-block {

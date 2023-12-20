@@ -27,7 +27,11 @@
 }
 
 .custom-cooperation-card__image-wrapper {
+    min-height: 150px;
+
     position: relative;
+
+    overflow: hidden;
 }
 
 .custom-cooperation-card__image-wrapper::before {
@@ -46,11 +50,21 @@
 }
 
 .custom-cooperation-card:has(.custom-cooperation-card__button:hover) .custom-cooperation-card__image-wrapper::before {
-    opacity: 0.85;
+    opacity: 0.7;
 }
 
 .custom-cooperation-card__image {
-    filter: brightness(0.8);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    filter: brightness(0.6);
 }
 
 .custom-cooperation-card__title {

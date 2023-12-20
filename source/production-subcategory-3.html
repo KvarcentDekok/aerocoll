@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" class="min-vh-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Обойный клей | Aerocoll</title>
+
+    <style>
+        .home {
+            background-image: url("img/bg-subcategory-3-desktop.webp");
+        }
+
+        @media (max-width: 768px) {
+            .home {
+                background-image: url("img/bg-subcategory-3-mobile.webp");
+            }
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+@@include('fragments/header.html', {active: 'production'})
+
+<main>
+    <div class="home">
+        <div class="container d-flex h-100">
+            <div class="home__title-block bg-primary mt-auto p-5">
+                <h1 class="text-white mb-4">Обойный клей</h1>
+
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="link-light" href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item"><a class="link-light" href="production.html">Продукция</a></li>
+                    <li class="breadcrumb-item">
+                        <a class="link-light" href="production-category-2.html">Строительно-монтажные клеи</a>
+                    </li>
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">Обойный клей</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('fragments/footer.html')
+
+<script src="js/general.js"></script>
+</body>
+</html>

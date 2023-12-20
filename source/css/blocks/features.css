@@ -17,7 +17,7 @@
 
 .features__brand {
     width: var(--brand-width);
-    height: var(--brand-width);
+    height: var(--brand-height);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,10 +31,9 @@
 
     background-color: #FFFFFF;
     filter: drop-shadow(0 0 50px rgba(0, 0, 100, 0.6));
-    border-radius: 50%;
 }
 
-/*.features__brand::before {
+.features__brand::before {
     border-left: calc(var(--brand-width) / 2) solid transparent;
     border-right: calc(var(--brand-width) / 2) solid transparent;
     border-bottom: calc((var(--brand-radius) * 2 - var(--brand-height)) / 2) solid #FFFFFF;
@@ -43,6 +42,8 @@
     top: calc((var(--brand-radius) * 2 - var(--brand-height)) / -2 + 1px);
 
     content: "";
+
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 .features__brand::after {
@@ -54,7 +55,9 @@
     bottom: calc((var(--brand-radius) * 2 - var(--brand-height)) / -2 + 1px);
 
     content: "";
-}*/
+
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
 
 .features__brand-image {
     width: 100%;
@@ -90,8 +93,7 @@
 
     transform-origin: center;
     transition: all 200ms linear;
-    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
-    border-radius: 50%;
+    clip-path: polygon(50% 0, 0% 50%, 50% 100%, 100% 50%);
 }
 
 .features__item:hover::before {
@@ -265,14 +267,14 @@
     position: absolute;
     z-index: 1;
 
-    font-size: calc(var(--radius) * 1px / 4);
+    font-size: calc(var(--radius) * 1px / 6);
     color: var(--primary-color);
 
     transition: all 200ms linear;
 }
 
 .features__item:hover .features__item-icon {
-    font-size: calc(var(--radius) * 1px / 3);
+    font-size: calc(var(--radius) * 1px / 5);
     color: #FFFFFF;
 }
 

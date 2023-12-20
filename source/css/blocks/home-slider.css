@@ -5,6 +5,8 @@
 
 .home-slider__slide {
     height: 20vw;
+
+    position: relative;
 }
 
 .home-slider__image {
@@ -16,6 +18,7 @@
     left: 50%;
 
     transform: translate(-50%, -50%);
+    filter: brightness(0.5);
 }
 
 .home-slider__content {

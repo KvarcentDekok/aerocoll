@@ -11,8 +11,8 @@
 
     <style>
         .swiper {
-            width: 450px;
-            height: 450px;
+            width: 480px;
+            height: 640px;
             margin: 0 auto;
 
         }
@@ -24,9 +24,16 @@
             justify-content: space-around;
             align-items: center;
 
-            background-color: var(--primary-bright-color);
             background-position: center;
             background-size: cover;
+        }
+
+        .swiper-slide:nth-child(odd) {
+            background-color: var(--primary-bright-color);
+        }
+
+        .swiper-slide:nth-child(even) {
+            background-color: var(--primary-color);
         }
     </style>
 </head>
@@ -175,7 +182,8 @@
                     </div>
                 </div>
 
-                <div class="swiper-pagination"></div>
+                <button type="button" class="swiper-button-prev"></button>
+                <button type="button" class="swiper-button-next"></button>
             </div>
         </div>
     </section>
@@ -270,7 +278,7 @@
         <div class="container">
             <h2 class="text-center mb-2 mb-lg-5">География поставок</h2>
 
-            <div class="card rounded-0 border-0">
+            <div class="card rounded-0 border-0 custom-geography-card">
                 <div class="row g-0">
                     <div class="col-lg-6">
                         <div class="card-body pb-3 px-0 p-lg-5">
@@ -306,8 +314,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <img src="img/image-placeholder.svg" class="img-fluid w-100 h-100" alt="...">
+                    <div class="col-lg-6 custom-geography-card__image-container">
+                        <img src="img/geography-of-supplies.webp" class="custom-geography-card__image"
+                             alt="Человек ставит булавку на карту." width="650" height="433">
                     </div>
                 </div>
             </div>

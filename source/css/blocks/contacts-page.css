@@ -1,0 +1,9 @@
+.contacts-page__home {
+    background-image: url("../../img/bg-contacts-desktop.webp");
+}
+
+@media (max-width: 768px) {
+    .contacts-page__home {
+        background-image: url("../../img/bg-contacts-mobile.webp");
+    }
+}

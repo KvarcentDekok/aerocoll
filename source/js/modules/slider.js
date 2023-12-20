@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay, EffectCube } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, EffectCards } from 'swiper/modules';
 
 export function initSliderMain() {
     const sliderMain = new Swiper('.home-slider', {
@@ -76,19 +76,13 @@ export function initSliderNews() {
 
 export function initSliderFeatures() {
     var swiper = new Swiper(".mySwiper", {
-        modules: [Pagination, EffectCube],
-        effect: 'cube',
+        modules: [Navigation, EffectCards],
+        effect: 'cards',
         grabCursor: true,
-        loop: true,
-        cubeEffect: {
-            shadow: true,
-            slideShadows: true,
-            shadowOffset: 20,
-            shadowScale: 0.94,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 }
