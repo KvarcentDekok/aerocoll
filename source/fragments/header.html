@@ -63,163 +63,34 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown custom-dropdown custom-dropdown--no-position">
+                    <li class="nav-item">
                         @@if (active === 'production') {
-                        <a href="production.html" id="products-dropdown"
-                           class="nav-link dropdown-toggle text-uppercase py-3 custom-dropdown__toggle active"
-                           aria-current="page" aria-expanded="false">
+                        <a class="nav-link text-uppercase pt-3 pb-3 custom-navbar__link active" href="production.html"
+                           aria-current="page">
                             Продукция
                         </a>
                         }
 
                         @@if (active !== 'production') {
-                        <a href="production.html" id="products-dropdown"
-                           class="nav-link dropdown-toggle text-uppercase py-3 custom-dropdown__toggle"
-                           aria-expanded="false">
+                        <a class="nav-link text-uppercase pt-3 pb-3 custom-navbar__link" href="production.html">
                             Продукция
                         </a>
                         }
-
-                        <div class="dropdown-menu p-4 start-50 translate-middle-x custom-dropdown__menu custom-dropdown__menu--width-max"
-                             aria-labelledby="products-dropdown">
-                            <div class="row">
-                                <div class="col-6">
-                                    <a href="production-category-1.html"
-                                       class="dropdown-header dropdown-item fs-5 fw-semibold text-uppercase">
-                                        Промышленные клеи
-                                    </a>
-
-                                    <ul class="list-unstyled p-0">
-                                        <li>
-                                            <a href="production-subcategory-1.html" class="dropdown-item text-uppercase">
-                                                Водно-дисперсионные клеи Aerocoll
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="production-subcategory-2.html" class="dropdown-item text-uppercase">Клей-расплав Rumelt</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-6">
-                                    <a href="production-category-2.html" class="dropdown-header dropdown-item fs-5 fw-semibold text-uppercase">
-                                        Строительно-Монтажные клеи
-                                    </a>
-
-                                    <ul class="list-unstyled p-0">
-                                        <li>
-                                            <a href="production-subcategory-3.html" class="dropdown-item text-uppercase">Обойный клей</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="production-subcategory-4.html" class="dropdown-item text-uppercase">Монтажный клей</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                     </li>
 
-                    <li class="nav-item dropdown custom-dropdown custom-dropdown--no-position">
+                    <li class="nav-item">
                         @@if (active === 'cooperation') {
-                        <a href="#" id="service-dropdown"
-                           class="nav-link dropdown-toggle text-uppercase py-3 custom-dropdown__toggle active"
-                           aria-current="page" aria-expanded="false">
+                        <a class="nav-link text-uppercase pt-3 pb-3 custom-navbar__link active" href="cooperation.html"
+                           aria-current="page">
                             Сотрудничество
                         </a>
                         }
 
                         @@if (active !== 'cooperation') {
-                        <a href="cooperation.html" id="service-dropdown"
-                           class="nav-link dropdown-toggle text-uppercase py-3 custom-dropdown__toggle"
-                           aria-expanded="false">
+                        <a class="nav-link text-uppercase pt-3 pb-3 custom-navbar__link" href="cooperation.html">
                             Сотрудничество
                         </a>
                         }
-
-                        <div class="dropdown-menu p-4 start-50 translate-middle-x custom-dropdown__menu custom-dropdown__menu--width-max"
-                             aria-labelledby="service-dropdown">
-                            <ul class="row list-unstyled gy-4">
-                                <li class="col">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
-
-                                        <div class="card-body">
-                                            <a href="cooperation.html#order"
-                                               class="link-secondary stretched-link text-decoration-none">
-                                                Заявка
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="col">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
-
-                                        <div class="card-body">
-                                            <a href="cooperation.html#selection"
-                                               class="link-secondary stretched-link text-decoration-none">
-                                                Подбор клея
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="col">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
-
-                                        <div class="card-body">
-                                            <a href="cooperation.html#testing"
-                                               class="link-secondary stretched-link text-decoration-none">
-                                                Тестирование
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="col">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
-
-                                        <div class="card-body">
-                                            <a href="cooperation.html#delivery"
-                                               class="link-secondary stretched-link text-decoration-none">
-                                                Доставка
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="col">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
-
-                                        <div class="card-body">
-                                            <a href="cooperation.html#payment"
-                                               class="link-secondary stretched-link text-decoration-none">
-                                                Оплата
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="col">
-                                    <div class="card">
-                                        <img src="img/image-placeholder.svg" class="card-img-top" alt="..." height="130">
-
-                                        <div class="card-body">
-                                            <a href="cooperation.html#support"
-                                               class="link-secondary stretched-link text-decoration-none">
-                                                Поддержка
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                     </li>
 
                     <li class="nav-item">

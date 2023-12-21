@@ -69,16 +69,16 @@ function dropdownFocusOutHandler(evt, index) {
 }
 
 function customDropdown() {
-    if (document.body.clientWidth > DESKTOP_WINDOW_WIDTH) {
+    if (window.innerWidth > DESKTOP_WINDOW_WIDTH) {
         initDropdowns();
     }
 
     window.addEventListener('resize', () => {
-        if (document.body.clientWidth > DESKTOP_WINDOW_WIDTH && !dropdownList.length) {
+        if (window.innerWidth > DESKTOP_WINDOW_WIDTH && !dropdownList.length) {
             initDropdowns();
         }
 
-        if (document.body.clientWidth <= DESKTOP_WINDOW_WIDTH && dropdownList.length) {
+        if (window.innerWidth <= DESKTOP_WINDOW_WIDTH && dropdownList.length) {
             for (let i = 0; i < dropdownList.length; i++) {
                 dropdownList[i].dispose();
             }

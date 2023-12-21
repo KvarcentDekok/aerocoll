@@ -14,7 +14,6 @@
             width: 480px;
             height: 640px;
             margin: 0 auto;
-
         }
 
         .swiper-slide {
@@ -35,6 +34,32 @@
         .swiper-slide:nth-child(even) {
             background-color: var(--primary-color);
         }
+
+        .custom-swiper-icon {
+            font-size: 90px;
+        }
+
+        @media (max-width: 992px) {
+            .swiper {
+                width: 360px;
+                height: 480px;
+            }
+
+            .custom-swiper-icon {
+                font-size: 70px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .swiper {
+                width: 240px;
+                height: 360px;
+            }
+
+            .custom-swiper-icon {
+                font-size: 50px;
+            }
+        }
     </style>
 </head>
 <body class="about-page d-flex flex-column min-vh-100">
@@ -43,7 +68,7 @@
 <main>
     <div class="home about-page__home">
         <div class="container d-flex h-100">
-            <div class="home__title-block bg-primary mt-auto p-5">
+            <div class="home__title-block bg-primary mt-auto">
                 <h1 class="text-white mb-4">О компании</h1>
 
                 <ol class="breadcrumb mb-0">
@@ -138,7 +163,7 @@
             <div class="swiper mySwiper mb-5">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide text-center text-white">
-                        <span class="bi bi-star-fill" style="font-size: 90px"></span>
+                        <span class="bi bi-star-fill custom-swiper-icon"></span>
 
                         <h3>Надежность нашей компании</h3>
 
@@ -149,7 +174,7 @@
                     </div>
 
                     <div class="swiper-slide text-center text-white">
-                        <span class="bi bi-star-fill" style="font-size: 90px"></span>
+                        <span class="bi bi-star-fill custom-swiper-icon"></span>
 
                         <h3>Надежность нашей компании</h3>
 
@@ -160,7 +185,7 @@
                     </div>
 
                     <div class="swiper-slide text-center text-white">
-                        <span class="bi bi-star-fill" style="font-size: 90px"></span>
+                        <span class="bi bi-star-fill custom-swiper-icon"></span>
 
                         <h3>Надежность нашей компании</h3>
 
@@ -171,7 +196,7 @@
                     </div>
 
                     <div class="swiper-slide text-center text-white">
-                        <span class="bi bi-star-fill" style="font-size: 90px"></span>
+                        <span class="bi bi-star-fill custom-swiper-icon"></span>
 
                         <h3>Надежность нашей компании</h3>
 
