@@ -73,16 +73,3 @@ export function initSliderNews() {
         }
     });
 }
-
-export function initSliderFeatures() {
-    var swiper = new Swiper(".mySwiper", {
-        modules: [Navigation, EffectCards],
-        effect: 'cards',
-        grabCursor: true,
-
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-}

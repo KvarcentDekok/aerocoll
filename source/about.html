@@ -8,59 +8,6 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <title>О компании Aerocoll</title>
-
-    <style>
-        .swiper {
-            width: 480px;
-            height: 640px;
-            margin: 0 auto;
-        }
-
-        .swiper-slide {
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-
-            background-position: center;
-            background-size: cover;
-        }
-
-        .swiper-slide:nth-child(odd) {
-            background-color: var(--primary-bright-color);
-        }
-
-        .swiper-slide:nth-child(even) {
-            background-color: var(--primary-color);
-        }
-
-        .custom-swiper-icon {
-            font-size: 90px;
-        }
-
-        @media (max-width: 992px) {
-            .swiper {
-                width: 360px;
-                height: 480px;
-            }
-
-            .custom-swiper-icon {
-                font-size: 70px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .swiper {
-                width: 240px;
-                height: 360px;
-            }
-
-            .custom-swiper-icon {
-                font-size: 50px;
-            }
-        }
-    </style>
 </head>
 <body class="about-page d-flex flex-column min-vh-100">
 @@include('fragments/header.html', {active: 'about'})
@@ -69,7 +16,7 @@
     <div class="home about-page__home">
         <div class="container d-flex h-100">
             <div class="home__title-block bg-primary mt-auto">
-                <h1 class="text-white mb-4">О компании</h1>
+                <h1 id="about-title" class="text-white mb-4">О компании</h1>
 
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a class="link-light" href="index.html">Главная</a></li>
@@ -78,6 +25,21 @@
             </div>
         </div>
     </div>
+
+    <section class="pb-5" aria-labelledby="about-title">
+        <div class="container">
+            <p class="lead">
+                Компания ООО «Новамелт» имеет долгую и успешную историю поставок немецких качественных промышленных видов
+                клея по различным направлениям. С 2018 года на территории России локализовано собственное производство
+                широкого спектра промышленного клея по немецким рецептурам. Продукция под брендом AEROCOLL представлена
+                в двух рыночных сегментах: водно-дисперсионные промышленные и строительные клеи. Наша основная цель
+                заключается в разработке и дальнейших поставках лучших технических решений для удовлетворения основных
+                потребностей наших клиентов. Нашей сильной стороной является возможность предложить широкий ассортимент
+                клея, индивидуальный подход к решению каждой задачи нашего заказчика, стабильное качество и комплексное
+                обслуживание.
+            </p>
+        </div>
+    </section>
 
     <section class="features">
         <div class="container">
@@ -98,7 +60,9 @@
                             только лучший сервис, потому что это наш стиль работы
                         </p>
 
-                        <span class="bi bi-star-fill features__item-icon"></span>
+                        <p class="features__item-icon">
+                            <span class="bi bi-star-fill"></span>
+                        </p>
                     </li>
 
                     <li class="features__item">
@@ -109,7 +73,9 @@
                             только лучший сервис, потому что это наш стиль работы
                         </p>
 
-                        <span class="bi bi-star-fill features__item-icon"></span>
+                        <p class="features__item-icon">
+                            <span class="bi bi-star-fill"></span>
+                        </p>
                     </li>
 
                     <li class="features__item">
@@ -120,7 +86,10 @@
                             только лучший сервис, потому что это наш стиль работы
                         </p>
 
-                        <span class="bi bi-star-fill features__item-icon"></span>
+                        <p class="features__item-icon">
+                            <span class="bi bi-star-fill"></span>
+                        </p>
+
                         <div class="features__item-hover" aria-hidden="true"></div>
                     </li>
 
@@ -132,7 +101,10 @@
                             только лучший сервис, потому что это наш стиль работы
                         </p>
 
-                        <span class="bi bi-star-fill features__item-icon"></span>
+                        <p class="features__item-icon">
+                            <span class="bi bi-star-fill"></span>
+                        </p>
+
                         <div class="features__item-hover" aria-hidden="true"></div>
                     </li>
 
@@ -144,7 +116,9 @@
                             только лучший сервис, потому что это наш стиль работы
                         </p>
 
-                        <span class="bi bi-star-fill features__item-icon"></span>
+                        <p class="features__item-icon">
+                            <span class="bi bi-star-fill"></span>
+                        </p>
                     </li>
 
                     <li class="features__item">
@@ -155,60 +129,11 @@
                             только лучший сервис, потому что это наш стиль работы
                         </p>
 
-                        <span class="bi bi-star-fill features__item-icon"></span>
+                        <p class="features__item-icon">
+                            <span class="bi bi-star-fill"></span>
+                        </p>
                     </li>
                 </ul>
-            </div>
-
-            <div class="swiper mySwiper mb-5">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide text-center text-white">
-                        <span class="bi bi-star-fill custom-swiper-icon"></span>
-
-                        <h3>Надежность нашей компании</h3>
-
-                        <p>
-                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
-                            только лучший сервис, потому что это наш стиль работы
-                        </p>
-                    </div>
-
-                    <div class="swiper-slide text-center text-white">
-                        <span class="bi bi-star-fill custom-swiper-icon"></span>
-
-                        <h3>Надежность нашей компании</h3>
-
-                        <p>
-                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
-                            только лучший сервис, потому что это наш стиль работы
-                        </p>
-                    </div>
-
-                    <div class="swiper-slide text-center text-white">
-                        <span class="bi bi-star-fill custom-swiper-icon"></span>
-
-                        <h3>Надежность нашей компании</h3>
-
-                        <p>
-                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
-                            только лучший сервис, потому что это наш стиль работы
-                        </p>
-                    </div>
-
-                    <div class="swiper-slide text-center text-white">
-                        <span class="bi bi-star-fill custom-swiper-icon"></span>
-
-                        <h3>Надежность нашей компании</h3>
-
-                        <p>
-                            Мы ставим в основу продаж Мы продаем только качественный товар и предоставляем
-                            только лучший сервис, потому что это наш стиль работы
-                        </p>
-                    </div>
-                </div>
-
-                <button type="button" class="swiper-button-prev"></button>
-                <button type="button" class="swiper-button-next"></button>
             </div>
         </div>
     </section>
@@ -237,8 +162,6 @@
                                     Очень весьма даже длинноватое, но не слишком уж прямо сильно длинное описание
                                     направления деятельности.
                                 </p>
-
-                                <a href="#" class="btn btn-primary btn-lg">Ссылка</a>
                             </div>
                         </div>
                     </div>
@@ -263,8 +186,6 @@
                                     Очень весьма даже длинноватое, но не слишком уж прямо сильно длинное описание
                                     направления деятельности.
                                 </p>
-
-                                <a href="#" class="btn btn-primary btn-lg">Ссылка</a>
                             </div>
                         </div>
                     </div>
@@ -289,8 +210,6 @@
                                     Очень весьма даже длинноватое, но не слишком уж прямо сильно длинное описание
                                     направления деятельности.
                                 </p>
-
-                                <a href="#" class="btn btn-primary btn-lg">Ссылка</a>
                             </div>
                         </div>
                     </div>
@@ -352,6 +271,5 @@
 @@include('fragments/footer.html')
 
 <script src="js/general.js"></script>
-<script src="js/about.js"></script>
 </body>
 </html>

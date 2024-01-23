@@ -8,20 +8,32 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <title>Строительно-монтажные клеи | Aerocoll</title>
+
+    <style>
+        .home {
+            background-image: url("img/bg-category-2-desktop.webp");
+        }
+
+        @media (max-width: 768px) {
+            .home {
+                background-image: url("img/bg-category-2-mobile.webp");
+            }
+        }
+    </style>
 </head>
-<body class="production-category-page d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100">
 @@include('fragments/header.html', {active: 'production'})
 
 <main>
-    <div class="home production-category-page__home">
+    <div class="home">
         <div class="container d-flex h-100">
             <div class="home__title-block bg-primary mt-auto">
-                <h1 class="text-white mb-4">Строительно-монтажные клеи</h1>
+                <h1 class="text-white mb-4">Строительные клеи</h1>
 
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a class="link-light" href="index.html">Главная</a></li>
                     <li class="breadcrumb-item"><a class="link-light" href="production.html">Продукция</a></li>
-                    <li class="breadcrumb-item active text-white-50" aria-current="page">Строительно-монтажные клеи</li>
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">Строительные клеи</li>
                 </ol>
             </div>
         </div>

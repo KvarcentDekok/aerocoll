@@ -1,13 +1,30 @@
 .custom-overlay-card {
+    height: 300px;
+
+    position: relative;
+
     color: #FFFFFF;
 
     transition: all 200ms linear;
+    overflow: hidden;
 }
 
 .custom-overlay-card:hover {
     color: var(--primary-bright-color);
 
     text-shadow: 0 0 2px #FFFFFF;
+}
+
+.custom-overlay-card__image {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    filter: brightness(0.5);
 }
 
 .custom-overlay-card__overlay {

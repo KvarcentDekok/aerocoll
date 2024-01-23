@@ -27,3 +27,7 @@
 .custom-breadcrumb--dark {
     --bs-breadcrumb-divider-color: var(--bs-secondary-color);
 }
+
+.list-group {
+    --bs-list-group-active-bg: var(--primary-bright-color);
+}

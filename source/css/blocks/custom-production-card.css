@@ -1,3 +1,23 @@
+.custom-production-card__image-wrapper {
+    height: 180px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.custom-production-card__image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
 .custom-production-card__title {
     transition: all 200ms linear;
 }

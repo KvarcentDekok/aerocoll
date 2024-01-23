@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <title>Промышленные клеи | Aerocoll</title>
+
+    <style>
+        .home {
+            background-image: url("img/bg-category-1-desktop.webp");
+        }
+
+        @media (max-width: 768px) {
+            .home {
+                background-image: url("img/bg-category-1-mobile.webp");
+            }
+        }
+    </style>
 </head>
-<body class="production-category-page d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100">
 @@include('fragments/header.html', {active: 'production'})
 
 <main>
-    <div class="home production-category-page__home">
+    <div class="home">
         <div class="container d-flex h-100">
             <div class="home__title-block bg-primary mt-auto">
                 <h1 class="text-white mb-4">Промышленные клеи</h1>
