@@ -16,8 +16,10 @@
 }
 
 .custom-overlay-card__image {
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     height: auto;
+    width: auto;
 
     position: absolute;
     top: 50%;
