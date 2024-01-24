@@ -83,7 +83,8 @@ gulp.task("server", () => {
 gulp.task("copy", () => {
     return gulp.src([
         "source/fonts/**/*.{woff,woff2}",
-        "source/img/**"
+        "source/img/**",
+        "source/public/**"
     ], {
         base: "source"
     })
