@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" class="min-vh-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Rumelt 702 | Aerocoll</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+@@include('fragments/header.html', {active: 'production'})
+
+<main>
+    <div class="container">
+        <ol class="breadcrumb custom-breadcrumb custom-breadcrumb--dark py-4">
+            <li class="breadcrumb-item">
+                <a class="link-primary link-opacity-75 link-underline-opacity-75 link-opacity-50-hover link-underline-opacity-50-hover"
+                   href="index.html">
+                    Главная
+                </a>
+            </li>
+
+            <li class="breadcrumb-item">
+                <a class="link-primary link-opacity-75 link-underline-opacity-75 link-opacity-50-hover link-underline-opacity-50-hover"
+                   href="production.html">
+                    Продукция
+                </a>
+            </li>
+
+            <li class="breadcrumb-item">
+                <a class="link-primary link-opacity-75 link-underline-opacity-75 link-opacity-50-hover link-underline-opacity-50-hover"
+                   href="production-category-1.html">
+                    Промышленные клеи
+                </a>
+            </li>
+
+            <li class="breadcrumb-item active text-muted" aria-current="page">Rumelt 702</li>
+        </ol>
+
+        <section class="row mb-5 gy-4">
+            <div class="col-12 col-lg-6">
+                <img src="img/product-2.webp" class="img-thumbnail rounded mx-auto d-block" alt=""
+                     aria-labelledby="product-title" aria-describedby="product-description" width="636" height="437">
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <h1 id="product-title">Rumelt 702</h1>
+                <p class="text-primary-bright fs-4">Клей для картонной и бумажной упаковки</p>
+
+                <h2 class="fs-5">Применение</h2>
+                <p id="product-description" class="text-muted">
+                    Клей-расплав на основе полиолефинов, для склеивания различных коробок и коробов,
+                    формирования лотков, склейки бокового шва крафт пакетов, а также приклейки ручки пакета,
+                    закрытия коробок с сыпучими продуктами (фасовка). Обладает высокой силой первоначального
+                    схватывания (важно при склейке материалов с эффектом памяти).
+                </p>
+            </div>
+        </section>
+    </div>
+
+    @@include('fragments/request-block.html')
+</main>
+
+@@include('fragments/footer.html')
+
+<script src="js/general.js"></script>
+</body>
+</html>
