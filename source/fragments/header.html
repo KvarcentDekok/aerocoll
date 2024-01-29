@@ -40,27 +40,19 @@
         <div class="container">
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-around">
-                    <li class="nav-item dropdown custom-dropdown">
+                    <li class="nav-item">
                         @@if (active === 'about') {
-                        <a href="about.html" id="about-dropdown"
-                           class="nav-link dropdown-toggle text-uppercase py-3 active custom-dropdown__toggle"
-                           aria-current="page" aria-expanded="false">
+                        <a href="about.html" class="nav-link text-uppercase pt-3 pb-3 custom-navbar__link active"
+                           aria-current="page">
                             О компании
                         </a>
                         }
 
                         @@if (active !== 'about') {
-                        <a href="about.html" id="about-dropdown"
-                           class="nav-link dropdown-toggle text-uppercase py-3 custom-dropdown__toggle"
-                           aria-expanded="false">
+                        <a href="about.html" class="nav-link text-uppercase pt-3 pb-3 custom-navbar__link">
                             О компании
                         </a>
                         }
-
-                        <ul class="dropdown-menu custom-dropdown__menu" aria-labelledby="about-dropdown">
-                            <li><a class="dropdown-item text-uppercase" href="#">Политика качества</a></li>
-                            <li><a class="dropdown-item text-uppercase" href="#">Новости</a></li>
-                        </ul>
                     </li>
 
                     <li class="nav-item">

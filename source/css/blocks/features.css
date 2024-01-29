@@ -1,15 +1,7 @@
 .features {
     --features-height: 600;
-    --radius: 180;
-    --ratio: calc(var(--features-height) / var(--radius));
-    --square-root-of-three: 1.732;
-    --brand-width: calc(var(--radius) * 1px * 2 / 3);
-    --brand-height: calc(var(--brand-width) / var(--square-root-of-three));
-    --brand-radius: calc(var(--radius) * 1px * 2 / 5);
-    --offset-x: calc(var(--radius) * 1px / (10 / 3));
-    --offset-y: calc(var(--features-height) * 1px / 3.871);
     --separator-length: 50px;
-    --square-side: 120px;
+    --square-side: 100px;
 }
 
 .features__wrapper {
@@ -188,7 +180,7 @@
     position: absolute;
     z-index: 1;
 
-    font-size: 50px;
+    font-size: 40px;
     color: var(--primary-color);
 
     transition: all 200ms linear;
@@ -205,21 +197,21 @@
 }
 
 .features__item:hover .features__item-icon {
-    font-size: 55px;
+    font-size: 45px;
     color: #FFFFFF;
 }
 
 .features__item:nth-child(1) .features__item-icon {
     border-bottom: none;
 
-    top: 80%;
+    top: 100%;
     right: calc(var(--square-side) / 2);
 }
 
 .features__item:nth-child(2) .features__item-icon {
     border-bottom: none;
 
-    top: 80%;
+    top: 100%;
     left: calc(var(--square-side) / 2);
 }
 
@@ -240,14 +232,14 @@
 .features__item:nth-child(5) .features__item-icon {
     border-top: none;
 
-    bottom: 80%;
+    bottom: 100%;
     right: calc(var(--square-side) / 2);
 }
 
 .features__item:nth-child(6) .features__item-icon {
     border-top: none;
 
-    bottom: 80%;
+    bottom: 100%;
     left: calc(var(--square-side) / 2);
 }
 
@@ -298,7 +290,7 @@
 
 .features__item-hover {
     height: 100%;
-    width: 50%;
+    width: 60%;
 
     position: absolute;
 }
