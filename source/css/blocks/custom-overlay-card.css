@@ -5,7 +5,7 @@
 
     color: #FFFFFF;
 
-    transition: all 200ms linear;
+    transition: color 200ms linear;
     overflow: hidden;
 }
 
