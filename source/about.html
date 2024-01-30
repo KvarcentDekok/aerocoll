@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <section class="pb-5" aria-labelledby="about-title">
+    <section class="pb-5" aria-labelledby="about-title" data-animation="about">
         <div class="container">
             <div class="p-5 border border-2 border-primary">
                 <img src="img/logo-novamelt.webp" class="img-fluid col-12 col-md-3 mb-3" alt="Логотип Новамелт."
@@ -149,7 +149,7 @@
             <h2 class="text-center mb-5">Основные направления деятельности</h2>
         </div>
 
-        <ul class="list-unstyled d-flex flex-column gap-5">
+        <ul class="list-unstyled d-flex flex-column gap-5 overflow-x-hidden">
             <li class="card rounded-0 custom-activity-card custom-activity-card--bg-left">
                 <div class="container">
                     <div class="row g-0">
@@ -218,7 +218,7 @@
         </ul>
     </section>
 
-    <section class="pb-5">
+    <section class="pb-5" data-animation="geography">
         <div class="container">
             <h2 class="text-center mb-2 mb-lg-5">География поставок</h2>
 
@@ -272,5 +272,6 @@
 @@include('fragments/footer.html')
 
 <script src="js/general.js"></script>
+<script src="js/about.js"></script>
 </body>
 </html>

@@ -58,7 +58,8 @@ gulp.task("html", () => {
 gulp.task("js", () => {
     return gulp.src([
         './source/js/general.js',
-        './source/js/index.js'
+        './source/js/index.js',
+        './source/js/about.js'
     ])
         .pipe(named())
         .pipe(webpackStream(webpackConfig))
