@@ -20,7 +20,8 @@ const plugins = [
     'node_modules/swiper/modules/navigation.min.css',
     'node_modules/swiper/modules/pagination.min.css',
     'node_modules/swiper/modules/effect-cards.min.css',
-    'node_modules/bootstrap/dist/css/bootstrap.min.css'
+    'node_modules/bootstrap/dist/css/bootstrap.min.css',
+    'node_modules/toastify-js/src/toastify.css'
 ];
 
 const config = (file) => ({
