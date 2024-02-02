@@ -1,9 +1,9 @@
 .about-page__home {
-    background-image: url("../../img/bg-about-desktop.webp");
+    background-image: url("../img/bg-about-desktop.webp");
 }
 
 @media (max-width: 768px) {
     .about-page__home {
-        background-image: url("../../img/bg-about-mobile.webp");
+        background-image: url("../img/bg-about-mobile.webp");
     }
 }
