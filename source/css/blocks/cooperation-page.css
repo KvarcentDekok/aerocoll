@@ -1,9 +1,9 @@
 .cooperation-page__home {
-    background-image: url("../../img/bg-cooperation-desktop.webp");
+    background-image: url("../img/bg-cooperation-desktop.webp");
 }
 
 @media (max-width: 768px) {
     .cooperation-page__home {
-        background-image: url("../../img/bg-cooperation-mobile.webp");
+        background-image: url("../img/bg-cooperation-mobile.webp");
     }
 }
