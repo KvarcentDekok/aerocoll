@@ -1,9 +1,9 @@
 .production-page__home {
-    background-image: url("../../img/bg-production-desktop.webp");
+    background-image: url("../img/bg-production-desktop.webp");
 }
 
 @media (max-width: 768px) {
     .production-page__home {
-        background-image: url("../../img/bg-production-mobile.webp");
+        background-image: url("../img/bg-production-mobile.webp");
     }
 }
