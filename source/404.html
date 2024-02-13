@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" class="min-vh-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    @@include('fragments/favicon.html')
+
+    <title>Ошибка 404 | Aerocoll</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+@@include('fragments/header.html', {active: ''})
+
+<main class="d-flex align-items-center justify-content-center py-5 my-5">
+    <div class="container text-center">
+        <h1 class="display-1 fw-bold">404</h1>
+
+        <p class="fs-3">Страница не найдена.</p>
+
+        <p class="lead">
+            Запрашиваемая страница не существует.
+        </p>
+
+        <a href="index.html" class="btn btn-primary">На главную</a>
+    </div>
+</main>
+
+@@include('fragments/footer.html')
+
+<script src="js/general.js"></script>
+</body>
+</html>
