@@ -23,3 +23,7 @@
 @import "blocks/contacts-page.css";
 @import "blocks/production-page.css";
 @import "blocks/about-page.css";
+
+.grecaptcha-badge {
+    z-index: -1;
+}
